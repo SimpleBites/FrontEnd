@@ -11,12 +11,9 @@ import Login from "./components/pages/Login";
 import Register from "./components/pages/register";
 
 import "../src/AppTw.css";
-<<<<<<< Updated upstream
-=======
 import Favorites from "./components/pages/favorites";
 import Submit from "./components/pages/submit"
 import Submitted from "./components/pages/submitted";
->>>>>>> Stashed changes
 
 
 
@@ -33,13 +30,10 @@ function App() {
         <Route path="/Contact" element={<Contact />} /> 
         <Route path="/Login" element={<Login />} /> 
         <Route path="/Register" element={<Register />} /> 
-<<<<<<< Updated upstream
-=======
         <Route path="/Profile" element={<Profile />} /> 
         <Route path="/Favorites" element={<Favorites />} /> 
         <Route path="/Submit" element={<Submit />} /> 
-        <Route path="/Submitted" element={<Submitted />} /> 
->>>>>>> Stashed changes
+        <Route path="/Submitted" element={<Submitted />} />
       </Routes>
       <Footer /> 
     </div>

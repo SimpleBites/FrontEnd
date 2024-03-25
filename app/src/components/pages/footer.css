@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 .Bottom-Footer {
     position: relative;
     bottom: 0;
@@ -313,7 +313,7 @@
 .custom-input2 {
     padding: 10px;
     margin: 5px;
-=======
+}
  .Bottom-Footer {
      position: relative;
      bottom: 0;
@@ -438,15 +438,18 @@
      display: inline-block;
      padding-top: 8px;
 
-     @media screen and (max-width: 767px) {
-         gap: 10px;
-         padding-top: 20px;
-     }
 
+     @media screen and (max-width: 767px) {
+        gap: 10px;
+        padding-top: 20px;
+     }
  }
 
+ 
+
+
  .nav-btm-content h2 {
->>>>>>> Stashed changes
+
      margin-right: 10px;
  }
 
@@ -475,62 +478,6 @@
      }
 
 
-<<<<<<< Updated upstream
-@media screen and (max-width: 576px) {
-    .custom-input2 {
-        width: 100%; 
-        margin: 5px 0; 
-    }
-}
-
-.Enter {
-    margin-right: 440px;
-}
-
-.Confirm {
-    margin-left: 400px;
-    margin-top: -20px;
-    margin-bottom:25px;
-}
-
-.selected {
-    display: inline-block;
-    position: relative;
-}
-
-.selected::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; /* Adjust this value as needed */
-    left: 0;
-    width: 60%;
-    height: 2px;
-    background-color: #365486;
-    margin-bottom: -10px !important;
-    margin-left: 150px !important;
-}
-
-.selected2 {
-    display: inline-block;
-    position: relative;
-}
-
-
-.selected2::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; /* Adjust this value as needed */
-    left: 0;
-    width: 60%;
-    height: 3px;
-    background-color: #365486;
-    margin-bottom: -10px !important;
-    margin-left: 30px !important;
-}
-.selected h2 {
-    margin-bottom: 5px; 
-}
-=======
      @media screen and (max-width: 576px) {
          margin-left: 20px;
      }
@@ -543,17 +490,11 @@
      height: 40px;
      margin-right: 5px
  }
->>>>>>> Stashed changes
 
  .login-box span {
      color: white;
  }
 
-<<<<<<< Updated upstream
-li {
-    list-style-type: none;
-}
-=======
  .Home {
      padding-left: 175px;
 
@@ -1089,4 +1030,3 @@ li {
     text-transform: uppercase;
     font-weight: 500;
   }
->>>>>>> Stashed changes
