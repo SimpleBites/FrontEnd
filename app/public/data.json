@@ -1,0 +1,150 @@
+{
+  "recipes": [
+    {
+      "title": "pancakes",
+      "description": "delicious pancakes",
+      "image": "/pancakes.png",
+      "average_score": "4.30",
+      "difficulty": "easy",
+      "preparation_time": "5 minutes",
+      "cooking_time": "30 minutes",
+      "servings": 12,
+      "user_id": 2,
+      "category_id": 2
+    },
+       {
+      "title": "HAMBURGER",
+      "description": "hamm hamm hamm gur gur gur",
+      "image": "/pancakes.png",
+      "average_score": "4.46",
+      "difficulty": "intermediate",
+      "preparation_time": "10 minutes",
+      "cooking_time": "40 minutes",
+      "servings": 4,
+      "user_id": 2,
+      "category_id": 2
+    },
+    {
+      "title": "hotdogg",
+      "description": "buddy you got that hot dog?",
+      "image": "/pancakes.png",
+      "average_score": "4.10",
+      "difficulty": "easy",
+      "preparation_time": "5 minutes",
+      "cooking_time": "30 minutes",
+      "servings": 6,
+      "user_id": 2,
+      "category_id": 2
+    },
+    {
+      "title": "pizza",
+      "description": "delicious pizza",
+      "image": "/pancakes.png",
+      "average_score": "4.30",
+      "difficulty": "easy",
+      "preparation_time": "5 minutes",
+      "cooking_time": "30 minutes",
+      "servings": 4,
+      "user_id": 2,
+      "category_id": 2
+    }, 
+      {
+        "title": "pans",
+        "description": "Delicious pans with syrup",
+        "image": "/pancakes.png",
+        "average_score": "4.80",
+        "difficulty": "easy",
+        "preparation_time": "10 minutes",
+        "cooking_time": "20 minutes",
+        "servings": 8,
+        "user_id": 1,
+        "category_id": 3
+      },
+      {
+        "title": "Cheeseburger",
+        "description": "Juicy cheeseburger with fries",
+        "image": "/pancakes.png",
+        "average_score": "4.65",
+        "difficulty": "intermediate",
+        "preparation_time": "15 minutes",
+        "cooking_time": "25 minutes",
+        "servings": 4,
+        "user_id": 2,
+        "category_id": 1
+      },
+      {
+        "title": "cold dog",
+        "description": "Classic cold dog with mustard and ketchup",
+        "image": "/pancakes.png",
+        "average_score": "4.20",
+        "difficulty": "easy",
+        "preparation_time": "8 minutes",
+        "cooking_time": "12 minutes",
+        "servings": 6,
+        "user_id": 3,
+        "category_id": 4
+      },
+      {
+        "title": "Spaghetti Bolognese",
+        "description": "Homemade spaghetti with rich tomato sauce",
+        "image": "/pancakes.png",
+        "average_score": "4.50",
+        "difficulty": "medium",
+        "preparation_time": "20 minutes",
+        "cooking_time": "35 minutes",
+        "servings": 4,
+        "user_id": 4,
+        "category_id": 2
+      }, 
+      {
+        "title": "pans",
+        "description": "Delicious pans with syrup",
+        "image": "/pancakes.png",
+        "average_score": "4.80",
+        "difficulty": "easy",
+        "preparation_time": "10 minutes",
+        "cooking_time": "20 minutes",
+        "servings": 8,
+        "user_id": 1,
+        "category_id": 3
+      },
+      {
+        "title": "Cheeseburger",
+        "description": "Juicy cheeseburger with fries",
+        "image": "/pancakes.png",
+        "average_score": "4.65",
+        "difficulty": "intermediate",
+        "preparation_time": "15 minutes",
+        "cooking_time": "25 minutes",
+        "servings": 4,
+        "user_id": 2,
+        "category_id": 1
+      },
+      {
+        "title": "cold dog",
+        "description": "Classic cold dog with mustard and ketchup",
+        "image": "/pancakes.png",
+        "average_score": "4.20",
+        "difficulty": "easy",
+        "preparation_time": "8 minutes",
+        "cooking_time": "12 minutes",
+        "servings": 6,
+        "user_id": 3,
+        "category_id": 4
+      },
+      {
+        "title": "Spaghetti Bolognese",
+        "description": "Homemade spaghetti with rich tomato sauce",
+        "image": "/pancakes.png",
+        "average_score": "4.50",
+        "difficulty": "medium",
+        "preparation_time": "20 minutes",
+        "cooking_time": "35 minutes",
+        "servings": 4,
+        "user_id": 4,
+        "category_id": 2
+      }
+    
+    
+  ]
+}
