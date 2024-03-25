@@ -118,7 +118,6 @@ export default function Submit() {
 
             ) : (
               <div className="file-upload-placeholder ">
-                <FontAwesomeIcon icon={faImage} className="test-icon-loc" />
                 <button className="hello" onClick={handleButtonClick}>Insert your image here</button>
               </div>
             )}

@@ -1030,3 +1030,15 @@
     text-transform: uppercase;
     font-weight: 500;
   }
+
+  .favorite {
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .favorite-text {
+    font-size: 13;
+    margin-bottom: 20px;
+  }
