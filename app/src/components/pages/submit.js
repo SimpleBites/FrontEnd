@@ -49,6 +49,8 @@ export default function Submit() {
 
     if (index === newInputValues.length - 1) {
       newInputValues.push('');
+    } else if (index === newInputValues.length - 2 && newInputValues[index] === '') {
+      newInputValues.pop();
     }
 
     setInputValues(newInputValues);
@@ -65,6 +67,8 @@ export default function Submit() {
 
     if (index === newIngreValues.length - 1) {
       newIngreValues.push('');
+    } else if (index === newIngreValues.length - 2 && newIngreValues[index] === '') {
+      newIngreValues.pop();
     }
 
     setIngreValues(newIngreValues);
@@ -78,14 +82,11 @@ export default function Submit() {
 
     if (index === newToolValues.length - 1) {
       newToolValues.push('');
-    } 
-    else if (index === newToolValues.length - 2 && newToolValues[index] === '') {
+    } else if (index === newToolValues.length - 2 && newToolValues[index] === '') {
       newToolValues.pop();
     }
 
-
     setToolValues(newToolValues);
-    
   };
   return (
     <div className="flex justify-center items-center h-screen">
