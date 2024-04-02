@@ -944,7 +944,7 @@
  .SUB-BUTTON {
     width: 510px;
     height: 48px;
-    background-color: #365486;
+    background-color: #365486 !important;
     margin-bottom: 50px;
     font-size: 30px;
     color: white;
