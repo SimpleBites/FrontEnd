@@ -14,6 +14,7 @@ import "../src/AppTw.css";
 import Favorites from "./components/pages/favorites";
 import Submit from "./components/pages/submit"
 import Submitted from "./components/pages/submitted";
+import Recipe from "./components/pages/recipe";
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/Favorites" element={<Favorites />} /> 
         <Route path="/Submit" element={<Submit />} /> 
         <Route path="/Submitted" element={<Submitted />} />
+        <Route path="/Recipe" element={<Recipe />} />
       </Routes>
       <Footer /> 
     </div>

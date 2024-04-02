@@ -1,0 +1,70 @@
+{
+  "recipes": [
+    {
+      "id": 5,
+      "title": "pancakes",
+      "description": "delicious pancakes",
+      "image": "/pancakes2.png",
+      "average_score": "4.30",
+      "difficulty": "easy",
+      "preparation_time": "5 minutes",
+      "cooking_time": "30 minutes",
+      "servings": 12,
+      "user_id": 2,
+      "category_id": 2,
+      "instructions": [
+        "Mix flour, sugar, baking powder, and salt in a bowl.",
+        "Add milk, egg, and melted butter to the dry ingredients.",
+        "Mix until smooth.",
+        "Pour batter onto a hot greased griddle.",
+        "Cook until bubbles form on the surface, then flip and cook until golden brown."
+      ],
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "2 tablespoons sugar",
+        "2 teaspoons baking powder",
+        "1/2 teaspoon salt",
+        "1 cup milk",
+        "1 egg",
+        "2 tablespoons melted butter"
+      ],
+      "tools": [
+        "Mixing bowl",
+        "Whisk",
+        "Griddle or skillet",
+        "Spatula"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "HAMBURGER",
+      "description": "hamm hamm hamm gur gur gur",
+      "image": "/pancakes2.png",
+      "average_score": "4.46",
+      "difficulty": "intermediate",
+      "preparation_time": "10 minutes",
+      "cooking_time": "40 minutes",
+      "servings": 4,
+      "user_id": 2,
+      "category_id": 2,
+      "instructions": [
+        "Preheat grill to medium-high heat.",
+        "Season ground beef with salt and pepper.",
+        "Form beef into patties and grill for 4-5 minutes per side.",
+        "Toast burger buns on the grill.",
+        "Assemble burgers with desired toppings."
+      ],
+      "ingredients": [
+        "1 lb ground beef",
+        "Salt and pepper to taste",
+        "4 hamburger buns",
+        "Lettuce, tomato, onion, cheese (optional)"
+      ],
+      "tools": [
+        "Grill",
+        "Spatula",
+        "Tongs"
+      ]
+    }
+  ]
+}
