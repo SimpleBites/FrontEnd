@@ -21,6 +21,9 @@ import Recipe from "./components/pages/recipe";
 // import '../tailwind.config'
 
 function App() {
+  fetch("http://localhost:5000/api/recipes")
+  .then(response => response.body())
+  .catch(error => console.log(error))
   return (
     <div className="App">
       <Navbar />
