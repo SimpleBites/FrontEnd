@@ -859,7 +859,6 @@
      background-repeat: no-repeat;
      background-position: left center;
      background-size: contain;
-     /* Adjust the size of the image to fit within the input */
  }
 
  .input-field-test {
@@ -879,24 +878,18 @@
      color: #7FC7D9;
      margin-bottom: -10px;
      margin-top: 10px;
-
  }
 
  .Instr {
      font-size: 24px !important;
  }
 
- /* 
- .file-test {
+ 
+ /* .file-test {
     width: 547px;
     height: 376px;
-    background-color:#C1C1C1;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 0px;
-    margin: -10px;
-    background-image: url('../../../public/test.png');
-    border: 2px solid rgb(74, 75, 75); 
+    left: 100px;
+    position: absolute
 } */
 
 
@@ -911,9 +904,10 @@
  }
 
  .selected-image {
-     width: 547px;
+     width: 547px !important;
      height: 376px;
-     margin-right: 200px;
+     margin-right: 100px;
+     margin-left: -100px
  }
 
  .file-upload-placeholder {
@@ -923,7 +917,8 @@
      color: rgb(0, 0, 0);
      text-align: center;
      font-size: 0px;
-     margin-right: 300px;
+     margin-right: 100px;
+     margin-left: -100px;
      background-image: url('../../../public/test.png');
      border: 2px solid rgb(74, 75, 75);
  }
@@ -933,7 +928,7 @@
      background-color: #F2F2F2;
      width: 324px !important;
      margin: 10px;
-     margin-left: 635px;
+     margin-left: 35px;
      margin-bottom: 20px;
      border: 2px solid #D9D9D9;
      padding-left: 5px;;
@@ -1022,6 +1017,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   
   .thumbnail {
