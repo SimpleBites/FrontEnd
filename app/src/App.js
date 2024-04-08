@@ -14,13 +14,16 @@ import "../src/AppTw.css";
 import Favorites from "./components/pages/favorites";
 import Submit from "./components/pages/submit"
 import Submitted from "./components/pages/submitted";
-import WordWrapInput from "./components/pages/WordWrapInput"; 
+import Recipe from "./components/pages/recipe";
 
 
 
 // import '../tailwind.config'
 
 function App() {
+  fetch("http://localhost:5000/api/recipes")
+  .then(response => response.body())
+  .catch(error => console.log(error))
   return (
     <div className="App">
       <Navbar />
@@ -35,7 +38,7 @@ function App() {
         <Route path="/Favorites" element={<Favorites />} /> 
         <Route path="/Submit" element={<Submit />} /> 
         <Route path="/Submitted" element={<Submitted />} />
-        <Route path="/WordWrapInput" element={<WordWrapInput />} />
+        <Route path="/Recipe" element={<Recipe />} />
       </Routes>
       <Footer /> 
     </div>
