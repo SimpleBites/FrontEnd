@@ -1056,6 +1056,19 @@ li {
 .favorite-text {
     font-size: 13;
     margin-bottom: 20px;
+  }
+
+  .ingre-text-style {
+    font-size: 24px;
+  }
+
+  .text-tools {
+    color: #365486;
+  }
+  .whitespace {
+    font-size: 50px;
+    color: white;
+    user-select: none; 
 }
 
 .blue-input-box {
