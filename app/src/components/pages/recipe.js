@@ -30,7 +30,7 @@ export default function Recipe() {
             <div className="flex flex-wrap items-center justify-center">
               <img src="pancakes.png" style={{ width: '425px', height: 'auto', maxWidth: '325px', maxHeight: '325px', marginRight: '1px', marginTop: '20px' }} />
               <div className="flex flex-col justify-center ml-4">
-                <h1 className="text-3xl text-black">{recipe.title}</h1>
+                <h1 className="text-3xl text-black title">{recipe.title}</h1>
                 <p>{recipe.description}</p>
               </div>
             </div>
