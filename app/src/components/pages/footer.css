@@ -851,6 +851,335 @@ li {
 
 
 
+ .data {
+     margin-left: -75px;
+
+ }
+
+ .custom-input2 {
+     padding: 10px;
+     margin: 5px;
+     margin-right: 10px;
+     margin-left: 40px;
+     border: 1px solid #365486;
+     border-radius: 0;
+     background-color: #BEBEBE;
+     color: black;
+     text-align: left;
+     width: 244px;
+ }
+
+
+ @media screen and (max-width: 576px) {
+     .custom-input2 {
+         width: 100%;
+         margin: 5px 0;
+     }
+ }
+
+ .Enter {
+     margin-right: 440px;
+ }
+
+ .Confirm {
+     margin-left: 400px;
+     margin-top: -20px;
+     margin-bottom: 25px;
+ }
+
+ .selected {
+     display: inline-block;
+     position: relative;
+ }
+
+ .selected::after {
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 60%;
+     height: 2px;
+     background-color: #365486;
+     margin-bottom: -10px !important;
+     margin-left: 150px !important;
+ }
+
+ .selected2 {
+     display: inline-block;
+     position: relative;
+ }
+
+
+ .selected2::after {
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 60%;
+     height: 3px;
+     background-color: #365486;
+     margin-bottom: -10px !important;
+     margin-left: 30px !important;
+ }
+
+ .selected h2 {
+     margin-bottom: 5px;
+ }
+
+ .custom-text {
+     font-size: 25px;
+     color: #365486;
+     margin-left: 170px;
+     margin-right: 170px;
+     margin-bottom: -0px !important;
+ }
+
+ li {
+     list-style-type: none;
+ }
+
+ .download.heart {
+     color: #365486;
+ }
+
+ .container {
+     display: flex;
+     align-items: center;
+ }
+
+ .favourites {
+     display: flex;
+     align-items: center;
+ }
+
+ .icon-container {
+     width: 204px;
+     height: 204px;
+     background-color: #365486;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 400px;
+     margin-right: 20px;
+     margin-top: 20px;
+ }
+
+ .User {
+     font-size: 114px;
+     color: white;
+ }
+
+ .User-text {
+     font-size: 40px;
+     margin-bottom: 100px;
+ }
+
+ .custom-button2 {
+     width: 144px;
+     margin: 10px auto;
+     border: none;
+     border-radius: 0px;
+     background-color: #365486 !important;
+     color: #fff;
+     cursor: pointer;
+     font-size: 20px;
+ }
+
+ .custom-button2:hover {
+     background-color: #004080;
+ }
+
+ .custom-button3 {
+     width: 79px;
+     margin: 10px auto;
+     border: none;
+     border-radius: 0px;
+     background-color: #365486 !important;
+     color: #fff;
+     cursor: pointer;
+     font-size: 20px;
+ }
+
+ .custom-button3:hover {
+     background-color: #004080;
+ }
+
+ .container {
+     display: flex;
+ }
+
+ .box {
+     width: 400px;
+     height: 200px;
+     background-color: #cce9f0;
+     border-radius: 20px;
+     margin: 20px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 100px;
+ }
+
+
+
+ .download,
+ .heart {
+     font-size: 102px;
+     color: #365486;
+ }
+
+
+ .box-content2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+ }
+
+
+
+ .text {
+     color: #365486;
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ .Lorem {
+     color: #365486;
+     font-size: 17px;
+ }
+
+ .grid-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 40px;
+     /* Adjust the gap as needed */
+ }
+
+ .fav {
+     width: 290px;
+     height: auto;
+     object-fit: cover;
+     margin: 5px;
+ }
+
+ .recipes-fav {
+     font-size: 35px;
+ }
+
+
+
+ .sub-file {
+     margin-right: 50px;
+ }
+
+ .upload-rec {
+     margin-top: 10px;
+     color: #365486;
+ }
+
+
+ .input-image {
+     background-image: url('../../../public/pencil2.png');
+     background-repeat: no-repeat;
+     background-position: left center;
+     background-size: contain;
+ }
+
+ .input-field-test {
+     background-color: #F2F2F2;
+     width: 300px;
+     margin: 10px;
+     position: relative;
+     right: 200px !important;
+     border: 2px solid #D9D9D9;
+     padding-left: 5px;
+     height: 33px;
+
+ }
+
+ .hide-image {
+     background-image: none !important;
+ }
+
+ .steps {
+    color: #7FC7D9;
+    margin-bottom: -5px;
+    margin-top: 10px;
+    position: relative;
+    right: 200px !important;
+}
+
+.Instr {
+    font-size: 24px !important;
+    position: relative;
+    right: 200px !important;
+}
+
+ 
+ 
+
+
+ .file-test:hover {
+     background-color: #b9b8b8;
+     cursor: pointer;
+ }
+
+ .no {
+     color: white;
+
+ }
+
+ .selected-image {
+     width: 547px !important;
+     height: 376px;
+     margin-right: 200px;
+     margin-left: -100px
+ }
+
+ .file-upload-placeholder {
+     width: 547px;
+     height: 376px;
+     background-color: #C1C1C1;
+     color: rgb(0, 0, 0);
+     text-align: center;
+     font-size: 0px;
+     margin-right: 150px;
+     margin-left: -200px;
+     background-image: url('../../../public/test.png');
+     border: 2px solid rgb(74, 75, 75);
+ }
+
+
+ .input-field2 {
+    background-color: #F2F2F2;
+    width: 324px !important;
+    margin: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px; /* Adjusted margin */
+    border: 2px solid #D9D9D9;
+    padding-left: 5px;
+    position:relative;
+    left: 300px !important;
+}
+
+ .text-positioning {
+    position: relative;
+    left: 90px !important;
+}
+
+.text-positioning2 {
+    position: relative;
+    left: 70px !important;
+}
+
+ .SUB-BUTTON {
+=======
+
 .sub-file {
     margin-right: 50px;
 }
@@ -951,9 +1280,10 @@ li {
 }
 
 .SUB-BUTTON {
+
     width: 510px;
     height: 48px;
-    background-color: #365486;
+    background-color: #365486 !important;
     margin-bottom: 50px;
     font-size: 30px;
     color: white;
@@ -973,6 +1303,7 @@ li {
 .description-input {
     background-color: #F2F2F2;
     width: 514px;
+    height: 178px;
     margin: 10px;
     border: 2px solid #D9D9D9;
     padding-left: 5px;
@@ -980,6 +1311,7 @@ li {
     /* Align text at the top */
     line-height: 178px !important;
     /* Set line height equal to the height of the input field */
+
 }
 
 .extra-inputs {
@@ -1037,15 +1369,24 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+  }
+  
+  .thumbnail {
+
 }
 
 .thumbnail {
+
     margin-bottom: 450px;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 500;
-}
+    right: 95px;
+    position: relative;
+  }
 
+}
 .favorite {
     font-size: 30px;
     margin: auto;
