@@ -201,9 +201,9 @@ export default function Submit() {
               </div>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex"> {/* Added this div */}
             <div className="lg:w-1/2 lg:col-span-1 order-2 lg:order-1">
-            <div className="mb-4">
+              <div className="mb-4">
                 <p className="Instr">Instructions</p>
                 <div className="flex flex-col">
                   {inputValues.map((value, index) => (
@@ -215,11 +215,13 @@ export default function Submit() {
                         placeholder=" &nbsp; &nbsp; &nbsp;add step"
                         value={value}
                         onChange={(e) => {
-                          const newValue = e.target.value.slice(0, 100);
+                          const newValue = e.target.value.slice(0, 60);
                           handleChange(index, newValue);
+                          e.target.style.height = newValue ? `${e.target.scrollHeight}px` : '33px'; // Set height based on content or 33px if no content
+                          e.target.style.width = `${Math.max(280, e.target.scrollWidth)}px`; // Set width based on content, but at least 280px
                         }}
-                        style={{ minHeight: '33px', resize: 'none', overflow: 'hidden' }}
-                        maxLength={100}
+                        style={{ minHeight: '33px', resize: 'none', overflow: 'hidden', width: '280px' }}
+                        maxLength={200}
                       />
                     </div>
                   ))}
@@ -257,7 +259,7 @@ export default function Submit() {
                 <span className="block mb-2">EXTRA TEXT FOR SPACE</span>
               </div>
             </div>
-          </div>
+          </div> 
         </form>
       </div>
     </div>

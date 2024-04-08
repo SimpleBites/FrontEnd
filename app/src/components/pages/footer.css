@@ -1082,7 +1082,7 @@ li {
 	border: 2px solid #d9d9d9;
 	padding-left: 5px;
 	position: relative;
-	left: 300px !important;
+	right: 330px !important;
 }
 
 .text-positioning {
@@ -1135,18 +1135,6 @@ li {
 	font-size: 24px !important;
 }
 
-/* 
- .file-test {
-    width: 547px;
-    height: 376px;
-    background-color:#C1C1C1;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 0px;
-    margin: -10px;
-    background-image: url('../../../public/test.png');
-    border: 2px solid rgb(74, 75, 75); 
-} */
 
 .file-test:hover {
 	background-color: #b9b8b8;
@@ -1212,10 +1200,6 @@ li {
 	margin: 10px;
 	border: 2px solid #d9d9d9;
 	padding-left: 5px;
-	vertical-align: top !important;
-	/* Align text at the top */
-	line-height: 178px !important;
-	/* Set line height equal to the height of the input field */
 }
 
 .extra-inputs {
