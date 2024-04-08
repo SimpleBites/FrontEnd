@@ -98,18 +98,32 @@ export default function Submit() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const formData = {
-      title,
-      description,
-      prepTime,
-      cookTime,
-      servings,
-      inputValues,
-      IngreValues,
-      toolValues,
-      selectedImage
-    };
-    console.log(formData);
+  
+    const requiredFieldsFilled =
+      title.trim() !== '' &&
+      description.trim() !== '' &&
+      prepTime.trim() !== '' &&
+      cookTime.trim() !== '' &&
+      servings.trim() !== '';
+  
+    if (requiredFieldsFilled) {
+      const formData = {
+        title,
+        description,
+        prepTime,
+        cookTime,
+        servings,
+        inputValues,
+        IngreValues,
+        toolValues,
+        selectedImage
+      };
+      console.log(formData);
+    } else {
+      alert('Please fill in all required fields and provide at least one instruction, ingredient, and tool before submitting.');
+    }
+
+    setHasValue(!extraValue);
   };
 
   return (
@@ -221,7 +235,7 @@ export default function Submit() {
                           e.target.style.width = `${Math.max(280, e.target.scrollWidth)}px`; // Set width based on content, but at least 280px
                         }}
                         style={{ minHeight: '33px', resize: 'none', overflow: 'hidden', width: '280px' }}
-                        maxLength={200}
+                        maxLength={250}
                       />
                     </div>
                   ))}
