@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage, faClock as fasClock, faUsers } from '@fortawesome/free-solid-svg-icons';
-import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { faImage, faClock as fasClock, faUsers } from '@fortawesome/free-solid-svg-icons'; // import faImage from solid icons
 import './footer.css';
 
 export default function Submit() {
   const [inputValues, setInputValues] = useState(['']);
-  const [extraValue, setHasValue] = useState(false);
+  const [extraValue, setHasValue] = useState(false); // This is a state variable, not an icon
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
@@ -83,10 +82,9 @@ export default function Submit() {
       newToolValues.pop();
     }
 
-
     setToolValues(newToolValues);
-    
   };
+
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="text-center">
@@ -95,17 +93,17 @@ export default function Submit() {
           <button className=" SUB-BUTTON">S U B M I T</button>
         </a>
         <div className='container'>
-        <h1 className="thumbnail">thumbnail</h1>
-        <div className="flex items-center mb-4">
+          <h1 className="thumbnail">thumbnail</h1>
           <div className="flex items-center mb-4">
-            <input
-              id="file-upload"
-              type="file"
-              className="file-test"
-              onChange={handleImageChange}
-              ref={fileInputRef}
-              style={{ display: 'none' }}
-            />
+            <div className="flex items-center mb-4">
+              <input
+                id="file-upload"
+                type="file"
+                className="file-test"
+                onChange={handleImageChange}
+                ref={fileInputRef}
+                style={{ display: 'none' }}
+              />
             </div>
 
             {selectedImage ? (
@@ -121,7 +119,6 @@ export default function Submit() {
                 <button className="hello" onClick={handleButtonClick}>Insert your image here</button>
               </div>
             )}
-
           </div>
           <div className="w-1/2 pl-4">
             <label className="block mb-2">Title</label>
