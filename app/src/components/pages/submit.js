@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { faClock as fasClock, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
+
 import './footer.css';
 
 export default function Submit() {
   const [inputValues, setInputValues] = useState(['']);
-  const [extraValue, setHasValue] = useState(false);
+  const [extraValue, setHasValue] = useState(false); // This is a state variable, not an icon
   const [selectedImage, setSelectedImage] = useState(null);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
