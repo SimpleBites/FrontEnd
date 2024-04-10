@@ -692,56 +692,18 @@ li {
 }
 
 
-.custom-button2 {
-	width: 144px;
-	margin: 10px auto;
-	border: none;
-	border-radius: 0px;
-	background-color: #365486 !important;
-	color: #fff;
-	cursor: pointer;
-	font-size: 20px;
-	margin-top: -30px;
-	margin-bottom: 20px;
-	margin-left: -85px;
- }
 
 .custom-button2:hover {
 	background-color: #004080;
 }
 
-.custom-button3 {
-	width: 79px;
-	margin: 10px auto;
-	border: none;
-	border-radius: 0px;
-	background-color: #365486 !important;
-	color: #fff;
-	cursor: pointer;
-	font-size: 20px;
-}
 
-.custom-button3:hover {
-	background-color: #004080;
-}
 
 .container {
 	display: flex;
 }
 
-.box {
-	width: 400px;
-	height: 200px;
-	background-color: #cce9f0;
-	border-radius: 20px;
-	margin: 20px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 100px;
-}
+
 
 .download,
 .heart {
@@ -905,8 +867,10 @@ li {
 	color: #fff;
 	cursor: pointer;
 	font-size: 20px;
-}
-
+	margin-top: -30px;
+	margin-bottom: 20px;
+	margin-left: -85px;
+ }
 .custom-button2:hover {
 	background-color: #004080;
 }
@@ -920,7 +884,9 @@ li {
 	color: #fff;
 	cursor: pointer;
 	font-size: 20px;
-}
+	margin-top: -30px;
+	margin-bottom: 20px;
+ }
 
 .custom-button3:hover {
 	background-color: #004080;
@@ -942,7 +908,9 @@ li {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 100px;
-}
+	margin-left: 40px;
+	margin-right: 40px;
+ }
 
 .download,
 .heart {
