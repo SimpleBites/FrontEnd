@@ -8,7 +8,7 @@ import './footer.css';
 
 export default function Submit() {
   const [inputValues, setInputValues] = useState(['']);
-  const [extraValue, setHasValue] = useState(false); // This is a state variable, not an icon
+  const [extraValue, setHasValue] = useState(false); 
   const [selectedImage, setSelectedImage] = useState(null);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -215,7 +215,7 @@ export default function Submit() {
               </div>
             </div>
           </div>
-          <div className="flex"> {/* Added this div */}
+          <div className="flex"> 
             <div className="lg:w-1/2 lg:col-span-1 order-2 lg:order-1">
               <div className="mb-4">
                 <p className="Instr">Instructions</p>
@@ -231,8 +231,8 @@ export default function Submit() {
                         onChange={(e) => {
                           const newValue = e.target.value.slice(0, 60);
                           handleChange(index, newValue);
-                          e.target.style.height = newValue ? `${e.target.scrollHeight}px` : '33px'; // Set height based on content or 33px if no content
-                          e.target.style.width = `${Math.max(280, e.target.scrollWidth)}px`; // Set width based on content, but at least 280px
+                          e.target.style.height = newValue ? `${e.target.scrollHeight}px` : '33px'; 
+                          e.target.style.width = `${Math.max(280, e.target.scrollWidth)}px`; 
                         }}
                         style={{ minHeight: '33px', resize: 'none', overflow: 'hidden', width: '280px' }}
                         maxLength={250}

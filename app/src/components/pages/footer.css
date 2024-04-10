@@ -1303,11 +1303,15 @@ li {
 .title-recipe-page {
     margin: 5px;
     font-size: 35px;
+    margin-left: -362px;
 }
 
 .description-recipe-page {
     margin-bottom: 260px !important;
+    margin-left: -5px;
+    text-align: left; /* Add this line to ensure text is aligned to the left */
 }
+
 
 .recipe-description-box {
     padding: 20px;
@@ -1316,14 +1320,55 @@ li {
   }
   
   .steps2 {
-	color: #7fc7d9;
-	margin-bottom: -5px;
-	margin-top: 10px;
-	position: relative;
-}
+    color: #7fc7d9;
+    margin-bottom: -5px;
+    margin-top: 20px !important;
+    position: relative;
+    margin-right: 460px;
+  }
+  
+  
 
 .recipes-container {
     display: flex;
     justify-content: flex-start;
     margin-left: 20px; 
   }
+
+  .icons-placing-styling {
+    margin-left: 420px !important;
+    margin-top: -50px;
+  }
+
+.icons-padding {
+    margin-left: -100px;
+}
+
+.icons-padding2 {
+    margin-left: -200px;
+}
+
+.instruction-text-align {
+    text-align: left;
+}
+
+.ingre-text-style2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: -60px;
+}
+
+.test-for-placing {
+    margin-left: 380px !important;
+    margin-top: -100px;
+}
+
+.ingre-text {
+    text-align: left !important;
+    margin-left: 140px;
+}
+
+.text-tools {
+    text-align: left !important;
+    margin-left: 60px;
+}
