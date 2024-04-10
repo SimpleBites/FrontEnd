@@ -681,10 +681,10 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 400px;
+	margin-left: -40px;
 	margin-right: 20px;
 	margin-top: 20px;
-}
+ }
 
 .User {
 	font-size: 114px;
@@ -884,18 +884,7 @@ li {
 	align-items: center;
 }
 
-.icon-container {
-	width: 204px;
-	height: 204px;
-	background-color: #365486;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 400px;
-	margin-right: 20px;
-	margin-top: 20px;
-}
+
 
 .User {
 	font-size: 114px;
