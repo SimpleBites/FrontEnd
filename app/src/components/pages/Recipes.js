@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './footer.css';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -54,7 +53,7 @@ export default function Recipes() {
           <h1 className="favorite">Recipes</h1>
           <span className="block favorite-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus. Pharetra massa massa ultricies mi quis hendrerit. Vel eros donec ac odio tempor orci dapibus ultrices in. Quis commodo odio aenean sed adipiscing diam donec adipiscing.</span>
   
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4" style={{ flexDirection: 'row' }}>
             {filteredRecipes.map((recipe, index) => (
               <a key={index} href={`/${recipe.category_id}`} className="flex flex-col items-center">
                 <img src={recipe.image} alt={recipe.title} className="object-cover" style={{ width: '275px', height: '275px', margin: '5px', marginBottom: '10px' }} />

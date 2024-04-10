@@ -738,7 +738,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: -40px;
+	margin-left: 400px;
 	margin-right: 20px;
 	margin-top: 20px;
  }
@@ -750,7 +750,7 @@
  
  .User-text {
 	font-size: 40px;
-	margin-bottom: 1px;
+	margin-bottom: 100px;
  }
  
  .custom-button2 {
@@ -762,9 +762,6 @@
 	color: #fff;
 	cursor: pointer;
 	font-size: 20px;
-	margin-top: -30px;
-	margin-bottom: 20px;
-	margin-left: -85px;
  }
  
  .custom-button2:hover {
@@ -780,8 +777,6 @@
 	color: #fff;
 	cursor: pointer;
 	font-size: 20px;
-	margin-top: -30px;
-	margin-bottom: 20px;
  }
  
  .custom-button3:hover {
@@ -804,8 +799,6 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 100px;
-	margin-left: 40px;
-	margin-right: 40px;
  }
  
  
@@ -842,6 +835,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 40px;
+	/* Adjust the gap as needed */
  }
  
  .fav {
@@ -1122,4 +1116,3 @@
 	background-color: #004080;
 	height: 87px;
    }
-   
