@@ -49,7 +49,7 @@ export default function Recipes() {
       </div>
   
       <div className="container mx-auto px-8"> 
-        <div className="recipes-container">
+      <div className="favorites-container">
           <h1 className="favorite">Recipes</h1>
           <span className="block favorite-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus. Pharetra massa massa ultricies mi quis hendrerit. Vel eros donec ac odio tempor orci dapibus ultrices in. Quis commodo odio aenean sed adipiscing diam donec adipiscing.</span>
   

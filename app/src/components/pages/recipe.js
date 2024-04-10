@@ -27,13 +27,16 @@ export default function Recipe() {
       <div className="w-full flex-grow max-w-screen-lg">
         {recipe && (
           <div key={recipe.id} className='top-recipe-page'>
-            <div className="flex flex-wrap items-center justify-center">
-              <img src="pancakes.png" style={{ width: '425px', height: 'auto', maxWidth: '325px', maxHeight: '325px', marginRight: '1px', marginTop: '20px' }} />
-              <div className="flex flex-col justify-center ml-4">
-                <h1 className="text-3xl text-black title">{recipe.title}</h1>
-                <p>{recipe.description}</p>
+            <div className="flex flex-wrap items-start justify-center">
+              <img src="pancakes.png" className="image-container" style={{ width: '425px', height: 'auto', maxWidth: '325px', maxHeight: '325px', marginRight: '20px', marginTop: '20px' }} />
+              <div className="flex flex-col justify-center">
+                <h1 className="text-3xl text-black title title-recipe-page">{recipe.title}</h1>
+                <div className="recipe-description-box">
+                  <p className="description-recipe-page">{recipe.description}</p>
+                </div>
               </div>
             </div>
+
             <div className="flex justify-between mt-4">
               <div className="w-1/3 pr-2">
                 <FontAwesomeIcon icon={fasClock} className="sizing" />
@@ -62,7 +65,7 @@ export default function Recipe() {
               {recipe.instructions.map((instruction, index) => (
                 <div key={index}>
                   <div className="mt-3">
-                    <label className='steps font-bold uppercase'>STEP {index + 1}</label>
+                    <label className='steps2 font-bold uppercase'>STEP {index + 1}</label>
                     <p>{instruction}</p>
                   </div>
                 </div>

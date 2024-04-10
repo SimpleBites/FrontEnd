@@ -1300,3 +1300,30 @@ li {
 	background-color: #004080;
 	height: 87px;
 }
+.title-recipe-page {
+    margin: 5px;
+    font-size: 35px;
+}
+
+.description-recipe-page {
+    margin-bottom: 260px !important;
+}
+
+.recipe-description-box {
+    padding: 20px;
+    max-width: 540px; 
+    height: 280px;
+  }
+  
+  .steps2 {
+	color: #7fc7d9;
+	margin-bottom: -5px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.recipes-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px; 
+  }
