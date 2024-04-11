@@ -29,7 +29,7 @@ export default function Recipe() {
         {recipe && (
           <div key={recipe.id} className='top-recipe-page'>
             <div className="flex flex-wrap items-start justify-center">
-              <img src="pancakes.png" className="image-container" style={{ width: '425px', height: 'auto', maxWidth: '325px', maxHeight: '325px', marginRight: '20px', marginTop: '20px' }} />
+              <img src="pancakes.png" alt='hi' className="image-container" style={{ width: '425px', height: 'auto', maxWidth: '325px', maxHeight: '325px', marginRight: '20px', marginTop: '20px' }} />
               <div className="flex flex-col justify-left">
                 <h1 className="text-black title title-recipe-page">{recipe.title}</h1>
                 <div className="recipe-description-box">
