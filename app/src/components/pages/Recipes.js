@@ -13,17 +13,23 @@ const Recipe = ({ recipe, onToggleFavorite }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <img 
-        src={recipe.image} 
-        alt={recipe.title} 
-        className="object-cover" 
-        style={{ width: '275px', height: '275px', margin: '5px', marginBottom: '10px' }} 
-      />
-      <button onClick={handleToggleFavorite} className={isFavorite ? "btn-test-favorite favorited" : "btn-test-favorite"}>
-        <FontAwesomeIcon icon={isFavorite ? FasHeart : FasHeart} />
-      </button>
+      <div className="relative">
+        <img
+          src={recipe.image}
+          alt={recipe.title}
+          className="object-cover"
+          style={{ width: '275px', height: '275px', margin: '5px', marginBottom: '10px' }}
+        />
+        <button
+          onClick={handleToggleFavorite}
+          className={isFavorite ? "btn-test-favorite favorited" : "btn-test-favorite"}
+          style={{ position: 'relative', top: -281, left: 454 }}
+        >
+          <FontAwesomeIcon icon={isFavorite ? FasHeart : FasHeart} />
+        </button>
+      </div>
       <div className="text-center">
-        <h2 className="">{recipe.title}</h2>
+        <h2 className="recipe-title-fontsize">{recipe.title}</h2>
       </div>
     </div>
   );
@@ -85,12 +91,12 @@ export default function Recipes() {
           </div>
         </div>
       </div>
-  
-      <div className="container mx-auto px-8"> 
+
+      <div className="container mx-auto px-8">
         <div className="favorites-container">
           <h1 className="favorite">Recipes</h1>
           <span className="block favorite-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus. Pharetra massa massa ultricies mi quis hendrerit. Vel eros donec ac odio tempor orci dapibus ultrices in. Quis commodo odio aenean sed adipiscing diam donec adipiscing.</span>
-  
+
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4" style={{ flexDirection: 'row' }}>
             {filteredRecipes.map((recipe, index) => (
               <Recipe key={index} recipe={recipe} onToggleFavorite={handleToggleFavorite} />
