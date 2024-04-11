@@ -53,7 +53,7 @@ const Home = () => {
                       alt={recipe.name}
                     />
                   </div>
-                  <h5 className="text-xl font-bold">{recipe.name}</h5>
+                  <h5 className="text-xl font-bold">{recipe.name}</h5> sss
                   <p className="text-gray-600">Prep: {recipe.prepTime} | Cook: {recipe.cookTime}</p>
                 </a>
               ))}
