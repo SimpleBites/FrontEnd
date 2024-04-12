@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { faMagnifyingGlass, faHeart as FasHeart } from '@fortawesome/free-solid-svg-icons';
+import CustomLink from '../CustomLink';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -11,25 +13,28 @@ const Recipe = ({ recipe, onToggleFavorite }) => {
     setIsFavorite(prevState => !prevState);
   };
 
+
+
+
   return (
     <div className="flex flex-col items-center">
       <div className="relative">
-        <img
-          src={recipe.image}
-          alt={recipe.title}
-          className="object-cover"
-          style={{ width: '275px', height: '275px', margin: '5px', marginBottom: '10px' }}
-        />
         <button
           onClick={handleToggleFavorite}
           className={isFavorite ? "btn-test-favorite favorited" : "btn-test-favorite"}
-          style={{ position: 'relative', top: -281, left: 454 }}
+          style={{ position: 'relative', left: 454 }}
         >
           <FontAwesomeIcon icon={isFavorite ? FasHeart : FasHeart} />
         </button>
-      </div>
-      <div className="text-center">
-        <h2 className="recipe-title-fontsize">{recipe.title}</h2>
+        <CustomLink to={`/recipe/${recipe.id}`}>
+          <img
+            src={recipe.image}
+            alt={recipe.title}
+            className="object-cover"
+            style={{ width: '275px', height: '275px', margin: '5px', marginBottom: '30px' }}
+          />
+          <h2 className="recipe-title-fontsize">{recipe.title}</h2>
+        </CustomLink>
       </div>
     </div>
   );
