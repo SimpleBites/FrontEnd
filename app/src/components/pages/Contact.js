@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CustomLink from '../CustomLink';
 
 export default function Contact() {
   const [recipes, setRecipes] = useState([]);
@@ -76,12 +77,12 @@ export default function Contact() {
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ml-80 pr-8" style={{ flexDirection: 'row' }}>
         {recipes.map((recipe, index) => (
-          <a key={index} href={`/${recipe.category_id}`} className="flex flex-col items-center">
+          <CustomLink key={index} to={`/${recipe.category_id}`} className="flex flex-col items-center">
             <img src={recipe.image} alt={recipe.title} className="object-cover" style={{ width: '275px', height: '275px', margin: '5px', marginBottom: '10px' }} />
             <div className="text-center">
               <h2 className="">{recipe.title}</h2>
             </div>
-          </a>
+          </CustomLink>
         ))}
       </div>
     </div>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './page.css';
+import FavoriteButton from '../FavoriteButton';
+import CustomLink from '../CustomLink';
 
 const Home = () => {
   const [recipes, setRecipes] = useState([]);
@@ -45,7 +47,9 @@ const Home = () => {
             <div className="w-3/4">
               <div className="recipes-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
                 {recipes.map((recipe, index) => (
-                  <a key={index} className="recipe" href={`/recipe/${index}`}>
+                  <div>
+                  <FavoriteButton isFavorite={recipe.favorite} onToggle={() => console.log("Toggle favorite")} />
+                  <CustomLink key={index} className="recipe" to={`/recipe/${index}`}>
                     <div className="relative">
                       <i className="fas fa-heart absolute top-2 right-2 text-red-500"></i>
                       <img
@@ -56,7 +60,8 @@ const Home = () => {
                     </div>
                     <h5 className="text-xl font-bold">{recipe.title}</h5>
                     <p className="text-gray-600">Prep: {recipe.preparation_time} | Cook: {recipe.cooking_time}</p>
-                  </a>
+                  </CustomLink>
+                  </div>
                 ))}
               </div>
             </div>
