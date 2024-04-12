@@ -10,7 +10,8 @@
       "cooking_time": "30 minutes",
       "servings": 12,
       "user_id": 2,
-      "category_id": 2
+      "category_id": 2,
+      "favorite": "no"
     },
        {
       "title": "HAMBURGER",
@@ -22,7 +23,8 @@
       "cooking_time": "40 minutes",
       "servings": 4,
       "user_id": 2,
-      "category_id": 2
+      "category_id": 3,
+      "favorite": "no"
     },
     {
       "title": "hotdogg",
@@ -34,7 +36,8 @@
       "cooking_time": "30 minutes",
       "servings": 6,
       "user_id": 2,
-      "category_id": 2
+      "category_id": 4,
+      "favorite": "no"
     },
     {
       "title": "pizza",
@@ -46,7 +49,8 @@
       "cooking_time": "30 minutes",
       "servings": 4,
       "user_id": 2,
-      "category_id": 2
+      "category_id": 5,
+      "favorite": "no"
     }, 
       {
         "title": "pans",
@@ -58,7 +62,9 @@
         "cooking_time": "20 minutes",
         "servings": 8,
         "user_id": 1,
-        "category_id": 3
+        "category_id": 6,
+        "favorite": "no"
+
       },
       {
         "title": "Cheeseburger",
@@ -70,7 +76,8 @@
         "cooking_time": "25 minutes",
         "servings": 4,
         "user_id": 2,
-        "category_id": 1
+        "category_id": 7,
+        "favorite": "no"
       },
       {
         "title": "cold dog",
@@ -82,7 +89,8 @@
         "cooking_time": "12 minutes",
         "servings": 6,
         "user_id": 3,
-        "category_id": 4
+        "category_id": 8,
+        "favorite": "no"
       },
       {
         "title": "Spaghetti Bolognese",
@@ -94,7 +102,8 @@
         "cooking_time": "35 minutes",
         "servings": 4,
         "user_id": 4,
-        "category_id": 2
+        "category_id": 9,
+        "favorite": "no"
       }, 
       {
         "title": "pans",
@@ -106,7 +115,8 @@
         "cooking_time": "20 minutes",
         "servings": 8,
         "user_id": 1,
-        "category_id": 3
+        "category_id": 10,
+        "favorite": "no"
       },
       {
         "title": "Cheeseburger",
@@ -118,7 +128,8 @@
         "cooking_time": "25 minutes",
         "servings": 4,
         "user_id": 2,
-        "category_id": 1
+        "category_id": 11,
+        "favorite": "no"
       },
       {
         "title": "cold dog",
@@ -130,7 +141,8 @@
         "cooking_time": "12 minutes",
         "servings": 6,
         "user_id": 3,
-        "category_id": 4
+        "category_id": 12,
+        "favorite": "no"
       },
       {
         "title": "Spaghetti Bolognese",
@@ -142,7 +154,8 @@
         "cooking_time": "35 minutes",
         "servings": 4,
         "user_id": 4,
-        "category_id": 2
+        "category_id": 13,
+        "favorite": "no"
       }
     
     
