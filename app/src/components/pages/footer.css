@@ -47,12 +47,7 @@
 	opacity: 0.5;
 }
 
-.nav-content {
-	display: flex;
-	align-items: center;
-	padding: 20px;
-	font-size: 20px;
-}
+
 
 .logo {
 	margin-left: 150px;
@@ -128,54 +123,9 @@
 	margin-right: 10px;
 }
 
-.login-box {
-	background-color: #5a8daf;
-	padding: 5px 5px;
-	position: relative;
-	/* Change position to relative */
-	/* top: 203px; */
-	border-radius: 10px;
-	margin-left: 1200px;
-	/* Initial margin */
 
-	@media screen and (max-width: 1800px) {
-		margin-left: 10px;
-		/* Adjust margin for smaller screens */
-	}
 
-	@media screen and (max-width: 1600px) {
-		margin-left: 100px;
-		/* Adjust margin for smaller screens */
-	}
 
-	@media screen and (max-width: 1400px) {
-		margin-left: 50px;
-		/* Adjust margin for smaller screens */
-	}
-
-	/* Adjust position for smaller screens */
-	@media screen and (max-width: 1200px) {
-		margin-left: 50px;
-		/* Adjust margin for smaller screens */
-	}
-
-	/* Adjust position for even smaller screens */
-	@media screen and (max-width: 576px) {
-		margin-left: 20px;
-		/* Further adjust margin for smaller screens */
-	}
-}
-
-.login-box img {
-	display: inline-block;
-	width: 35px;
-	height: 40px;
-	margin-right: 5px;
-}
-
-.login-box span {
-	color: white;
-}
 
 .Home {
 	padding-left: 175px;
@@ -413,6 +363,7 @@
 	gap: 65px;
 	display: inline-block;
 	padding-top: 8px;
+	height: 35px;
 
 	@media screen and (max-width: 767px) {
 		gap: 10px;
@@ -430,28 +381,26 @@
 	position: relative;
 	top: 0px;
 	border-radius: 10px;
-	margin-left: 1200px;
-
+	margin-left: 1000px;
+ 
 	@media screen and (max-width: 1800px) {
-		margin-left: 10px;
+	    margin-left: 850px;
 	}
-
+ 
 	@media screen and (max-width: 1600px) {
-		margin-left: 100px;
+	    margin-left: 650px;
 	}
-
 	@media screen and (max-width: 1400px) {
-		margin-left: 50px;
+	    margin-left: 350px;
 	}
-
 	@media screen and (max-width: 1200px) {
-		margin-left: 50px;
+	    margin-left: 150px;
 	}
-
-	@media screen and (max-width: 576px) {
-		margin-left: 20px;
+	@media screen and (max-width: 1000px) {
+	    margin-left: 50px;
 	}
-}
+ }
+ 
 
 .login-box img {
 	display: inline-block;
@@ -1310,7 +1259,7 @@ li {
 .description-recipe-page {
     margin-bottom: 260px !important;
     margin-left: -5px;
-    text-align: left; /* Add this line to ensure text is aligned to the left */
+    text-align: left; 
 }
 
 
@@ -1373,3 +1322,133 @@ li {
     text-align: left !important;
     margin-left: 60px;
 }
+
+.text-area-contact {
+	background-color: #BEBEBE;
+	width: 396px;
+	border-radius: 2px;
+	border: 1px solid #004080; 
+	margin-bottom: 10px;
+   }
+
+
+.Lorem-text-styling-contact {
+	width: 600px;
+	color: #365486;
+	font-size: 15px;
+	text-align: left;
+}
+
+.title-contact-page {
+	color: #365486;
+	font-size: 40px;
+	margin-right: 990px;
+	text-align: left;
+
+	@media screen and (max-width: 1800px) {
+		margin-right: 910px;
+	 }
+  
+	 @media screen and (max-width: 1600px) {
+		margin-right: 810px;
+	 }
+	 @media screen and (max-width: 1400px) {
+		margin-right: 780px;
+	 }
+	 @media screen and (max-width: 1200px) {
+		margin-right: 670px;
+	 }
+	 @media screen and (max-width: 1000px) {
+		margin-right: 570px;
+	 }
+}
+
+.box-submit-contact {
+	background-color: #D9D9D9;
+	width: 440px;
+	height: 330px;
+	margin-bottom: 80px;
+	margin-top: -80px;
+	margin-left: 250px;
+
+	@media screen and (max-width: 1800px) {
+		margin-left: 150px;
+	 }
+  
+	 @media screen and (max-width: 1600px) {
+		margin-left: 50px;
+	 }
+	 @media screen and (max-width: 1400px) {
+		margin-left: 25px;
+	 }
+	 @media screen and (max-width: 1200px) {
+		margin-left: -75px;
+	 }
+	 @media screen and (max-width: 1000px) {
+		margin-left: 50px;
+	 }
+}
+
+.sub-button2 {
+	width: 397px;
+	height: 30px;
+	background-color: #365486 !important;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.text-align-contact {
+	text-align: left;
+	font-size: 15px;
+	margin-left: 22px;
+}
+
+.text-recipe-contact {
+	font-size: 19px;
+	color: #365486;
+	margin-bottom: 22px;
+}
+
+.white-space {
+	font-size: 20px;
+	color: white;
+	opacity: 0;
+	user-select: none;
+}
+
+.logged-in-box {
+	background-color: #36548650;
+	color: white;
+	padding: 5px 5px;
+	position: relative;
+	top: 0px;
+	border-radius: 10px;
+	margin-left: 850px;
+  
+	@media screen and (max-width: 1800px) {
+	    margin-left: 700px;
+	}
+  
+	@media screen and (max-width: 1600px) {
+	    margin-left: 500px;
+	}
+	@media screen and (max-width: 1400px) {
+	    margin-left: 200px;
+	}
+	@media screen and (max-width: 1200px) {
+	    margin-left: 0px;
+	}
+	@media screen and (max-width: 1000px) {
+	    margin-left: 0;
+	}
+ }
+ 
+ .pfpuser {
+	height: 39px;
+	width: 47px;
+	border-radius: 10px;
+	border: 2px solid white; 
+ }
+ 
+ 
