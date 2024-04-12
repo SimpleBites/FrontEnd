@@ -38,14 +38,14 @@ export default function Register() {
                setEmailError('');
                setPassword1Error('');
                setPassword2Error('');
-
-               if (errors) {
+               if(errors === undefined){
+                    alert("register succesful! redirecting to homepage")
+                    navigate("/home")
+                  } else{
                     errors.forEach(error => {
                          console.log(error.path)
-
                          if (error.path === 'username') {
                               setUsernameError(error.msg);
-
                          } else if (error.path === 'email') {
                               setEmailError(error.msg);
                          } else if (error.path === 'password1') {

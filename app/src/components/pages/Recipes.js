@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { faMagnifyingGlass, faHeart as FasHeart } from '@fortawesome/free-solid-svg-icons';
 import CustomLink from '../CustomLink';
 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Recipe = ({ recipe, onToggleFavorite }) => {
@@ -11,6 +12,7 @@ const Recipe = ({ recipe, onToggleFavorite }) => {
     onToggleFavorite(recipe.category_id);
     setIsFavorite(prevState => !prevState);
   };
+
 
 
 

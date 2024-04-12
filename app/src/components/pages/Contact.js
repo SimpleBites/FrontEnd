@@ -34,13 +34,13 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col items-center mt-20 h-screen">
+    <div className="flex flex-col items-center mt-20 min-h-screen">
       <h1 className="title-contact-page mb-8">Lorem ipsum dolor sit <br></br>amet</h1>
       <form onSubmit={handleSubmit} className="flex">
         <p className="Lorem-text-styling-contact mr-20">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus. Pharetra massa massa ultricies mi quis hendrerit. Vel eros donec ac odio tempor orci dapibus ultrices in. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus. Pharetra massa massa ultricies mi quis hendrerit. Vel eros donec ac odio tempor orci dapibus ultrices in.
         </p>
-        <div className="mr-4 ml-60 box-submit-contact">
+        <div className="mr-4 box-submit-contact">
           <p className="mt-3 text-align-contact">Your name</p>
           <input 
             className="text-area-contact" 
@@ -85,6 +85,7 @@ export default function Contact() {
           </CustomLink>
         ))}
       </div>
+      <span className="white-space"> white space </span>
     </div>
   );
 }
