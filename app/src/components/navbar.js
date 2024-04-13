@@ -51,12 +51,15 @@ export default function Navbar() {
                                    <CustomLink to="/Recipes">Recipes</CustomLink>
                                    <CustomLink to="/Contact">Contact</CustomLink>
                                 
+                                   
                                   <form onSubmit={logout} method="POST">
+                       
                                         <button type="submit" className="custom-button mb-10">
                                              <p>logout</p>
                                              </button>
-                                             
+                               
                                         </form>
+                                       
                                    
                                    <CustomLink to="/Login">
 

@@ -15,17 +15,11 @@
     margin-bottom: 150px; 
   }
   
-  .text-outline {
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 3em; 
-  }
-
+  
   .page {
-    margin-left: 170px;
-    margin-right: 170px;
-    max-width: 1920px; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1650px; 
   }
   
   
@@ -48,6 +42,7 @@
     margin-right: 16px; 
     margin-bottom: 16px; 
     box-sizing: border-box; 
+    z-index: 1;
   }
   
   
@@ -55,3 +50,4 @@
     width: 100%; 
     height: auto; 
   }
+
