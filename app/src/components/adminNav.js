@@ -18,7 +18,7 @@ export default function AdminNav() {
                                         <p className='mb-2 Content-Nav-Admin'>Dashboard</p>
                                    </div>
                               </CustomLink>
-                              <CustomLink to="/Comments" className="link">
+                              <CustomLink to="/admin/Comments" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faComment} className='admin-nav-icons' />
                                         <p className='mb-2 Content-Nav-Admin'>Comments</p>
