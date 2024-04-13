@@ -17,6 +17,7 @@ import Recipe from "./components/pages/recipe";
 import "../src/AppTw.css";
 import AdminNav from "./components/adminNav";
 import Comments from "./components/pages/admin/comments";
+import Panel from "./components/pages/panel";
 
 function App() {
   const location = useLocation();
@@ -56,6 +57,7 @@ function App() {
         <Route path="/Recipe" element={<Recipe />} />
         <Route path="/Admin/*" element={<AdminWithLayout />} /> 
         <Route path="/Admin/Comments" element={<Comments />} /> 
+        <Route path="/Panel" element={<Panel />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>
