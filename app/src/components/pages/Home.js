@@ -10,7 +10,7 @@ const Home = () => {
       try {
         const response = await fetch('/data2.json');
         const data = await response.json();
-        setRecipes(data.recipes);
+        setRecipes(data.recipes.slice(0, 8));
       } catch (error) {
         console.error('Error fetching data:', error);
       }
