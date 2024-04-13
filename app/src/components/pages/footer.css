@@ -5,6 +5,7 @@
 	background-color: #304a76;
 	color: white;
 	padding: 20px;
+	padding-bottom: 0px;
 	text-align: center;
 	width: 100%;
 	display: flex;
@@ -18,6 +19,7 @@
 	bottom: -1;
 	left: 0;
 	padding: 35px;
+	padding-top: 0px;
 	background-color: #365486;
 	width: 100%;
 	flex-direction: row !important;
@@ -92,11 +94,8 @@
 .bottom-nav {
 	width: 100%;
 	position: static;
-	/* or remove the position property */
 	top: 1;
-	/* This should be removed */
 	left: 0;
-	/* This should be removed */
 	background-color: #7fc7d9;
 	padding-bottom: 20px;
 	padding-top: 15px;

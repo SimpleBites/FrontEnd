@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Navbar from "./components/navbar";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/register";
+import Admin from "./components/adminNav";
 
 import "../src/AppTw.css";
 import Favorites from "./components/pages/favorites";
@@ -37,7 +38,8 @@ function App() {
         <Route path="/Submit" element={<Submit />} /> 
         <Route path="/Submitted" element={<Submitted />} />
         <Route path="/Recipe" element={<Recipe />} />
-      </Routes>
+        <Route path="/Admin" element={<Admin />} />
+      </Routes> 
       <Footer /> 
     </div>
   );

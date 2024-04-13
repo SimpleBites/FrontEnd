@@ -1,0 +1,44 @@
+.Container-Nav-Admin {
+     background-color: #7FC7D9;
+     width: 180px;
+     color: #365486;
+     height: 100vh;
+     font-family: "Inter", sans-serif; 
+   }
+   
+   .Title-Nav-Admin {
+     color: #365486;
+     font-size: 22px;
+     font-weight: bold;
+     margin-top: -15px;
+     margin-bottom: 100px;
+     font-family: "Inter", sans-serif; 
+     align-items: left;
+   }
+
+   .Content-Nav-Admin {
+     font-size: 22px;
+     font-family: "Inter", sans-serif; 
+     font-weight: bold;
+   }
+   
+.admin-nav-icons {
+     height: 25px;
+     width: 30px;
+     margin-bottom: 12.5px;
+     margin-right: 5px;
+}
+
+.Content-Nav-Admin2 {
+     width: 100px;
+     background: #7FC7D9;
+     border: none; 
+     outline: none;
+}
+
+.Content-Nav-Admin2::placeholder {
+     color: #365486; 
+     opacity: 1; 
+     font-weight: bold;
+     font-size: 22px;
+   }
