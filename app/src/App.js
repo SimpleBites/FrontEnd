@@ -9,11 +9,13 @@ import Footer from './components/Footer';
 import Navbar from "./components/navbar";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/register";
-import Admin from "./components/admin/Dashboard";
+import Dashboard from "./components/admin/Dashboard";
+import AdminNav from "./components/admin/adminNav";
 import Favorites from "./components/pages/favorites";
 import Submit from "./components/pages/submit";
 import Submitted from "./components/pages/submitted";
 import Recipe from "./components/pages/recipe";
+import Comments from "./components/admin/Comments";
 
 import "../src/AppTw.css";
 
@@ -34,6 +36,7 @@ function App() {
     "/Recipe"
   ];
 
+  // Check if the current route should show navbar and footer
   const showNavbarAndFooter = showNavbarAndFooterRoutes.includes(location.pathname);
 
   return (
@@ -61,7 +64,12 @@ function App() {
 function AdminWithLayout() {
   return (
     <>
-      <Admin />
+      <AdminNav />
+      <Routes>
+        <Route path="/admin" element={<Dashboard />} />
+        <Route path="/admin/Comments" element={<Comments />} />
+        
+      </Routes>
     </>
   );
 }
