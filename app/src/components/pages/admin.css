@@ -1,27 +1,27 @@
 .Container-Nav-Admin {
      background-color: #7FC7D9;
-     width: 180px;
+     width: 200px;
      color: #365486;
      height: 103vh;
-     font-family: "Inter", sans-serif; 
-   }
-   
-   .Title-Nav-Admin {
+     font-family: "Inter", sans-serif;
+}
+
+.Title-Nav-Admin {
      color: #365486;
      font-size: 22px;
      font-weight: bold;
      margin-top: -15px;
      margin-bottom: 100px;
-     font-family: "Inter", sans-serif; 
+     font-family: "Inter", sans-serif;
      align-items: left;
-   }
+}
 
-   .Content-Nav-Admin {
+.Content-Nav-Admin {
      font-size: 22px;
-     font-family: "Inter", sans-serif; 
+     font-family: "Inter", sans-serif;
      font-weight: bold;
-   }
-   
+}
+
 .admin-nav-icons {
      height: 25px;
      width: 30px;
@@ -32,13 +32,92 @@
 .Content-Nav-Admin2 {
      width: 100px;
      background: #7FC7D9;
-     border: none; 
+     border: none;
      outline: none;
 }
 
 .Content-Nav-Admin2::placeholder {
-     color: #365486; 
-     opacity: 1; 
+     color: #365486;
+     opacity: 1;
      font-weight: bold;
      font-size: 22px;
-   }
+}
+
+.Users-panel-css {
+     font-size: 35px;
+     color: #365486;
+}
+
+.top-content-container {
+     background-color: #365486;
+     width: 750px;
+     margin-left: 100px;
+
+}
+
+.table-container {
+     margin-left: 100px;
+
+}
+
+.table thead tr {
+     background-color: #365486;
+     color: white;
+}
+
+.table th {
+     padding: 12px;
+}
+
+.table tbody tr:nth-child(2n) {
+     background-color: #7FC7D9;
+     height: 75px;
+     color: white;
+     font-size: 22px;
+     font-family: "Inter", sans-serif;
+}
+.table tbody tr:nth-child(odd) {
+     background-color: #69a5c0;
+     height: 75px;
+     color: white;
+     font-size: 22px;
+     font-family: "Inter", sans-serif;
+}
+
+
+
+.search-user-thingy::placeholder {
+     color: white;
+     opacity: 1;
+}
+
+.search-user-thingy {
+     background-color: #365486;
+     color: white;
+     padding: 20px;
+     border: none;
+     outline: none;
+}
+
+.table-content {
+     color: white;
+     font-size: 22px;
+     font-family: "Inter", sans-serif;
+}
+
+.edit-btn {
+     background-color: #365486;
+     color: white;
+     font-size: 22px;
+     width: 120px;
+     height: 35px;
+}
+
+.delete-btn {
+     color: white;
+     font-size: 22px;
+     width: 120px;
+     height: 40px;
+     background-color: red;
+     margin-left: 20px;
+}

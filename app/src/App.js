@@ -10,6 +10,7 @@ import Navbar from "./components/navbar";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/register";
 import Admin from "./components/adminNav";
+import Panel from "./components/pages/Panel";
 
 import "../src/AppTw.css";
 import Favorites from "./components/pages/favorites";
@@ -19,7 +20,6 @@ import Recipe from "./components/pages/recipe";
 
 
 
-// import '../tailwind.config'
 
 function App() {
   
@@ -39,6 +39,7 @@ function App() {
         <Route path="/Submitted" element={<Submitted />} />
         <Route path="/Recipe" element={<Recipe />} />
         <Route path="/Admin" element={<Admin />} />
+        <Route path="/Panel" element={<Panel />} />
       </Routes> 
       <Footer /> 
     </div>

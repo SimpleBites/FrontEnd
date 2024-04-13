@@ -12,7 +12,7 @@ export default function AdminNav() {
                          <img src='/logo.png' className="logo" alt='hi' style={{ width: '170px', height: '170px', marginRight: '150px' }} />
                          <p className="Title-Nav-Admin">Hello, Admin</p>
                          <div className="flex flex-col items-start">
-                              <CustomLink to="/Home" className="link">
+                              <CustomLink to="/dashboard" className="link">
                                    <div className="flex items-center">
                                         <img src='/tachometer.png' className=" " style={{ width: '30px', height: '22px', marginBottom: '5px', marginLeft: "-2px", marginRight: "8px" }}/>
                                         <p className='mb-2 Content-Nav-Admin'>Dashboard</p>
