@@ -24,13 +24,13 @@ export default function AdminNav() {
                                         <p className='mb-2 Content-Nav-Admin'>Comments</p>
                                    </div>
                               </CustomLink>
-                              <CustomLink to="/Adminrecipes" className="link">
+                              <CustomLink to="/Admin/recipes" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faUtensils} className='admin-nav-icons' />
                                         <p className='mb-2 Content-Nav-Admin'>Recipes</p>
                                    </div>
                               </CustomLink>
-                              <CustomLink to="/Users" className="link">
+                              <CustomLink to="/panel" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faUser} className='admin-nav-icons' />
                                         <p className='mb-2 Content-Nav-Admin'>Users</p>
