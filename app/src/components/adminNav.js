@@ -14,7 +14,7 @@ export default function AdminNav() {
                          </CustomLink>
                          <p className="Title-Nav-Admin">Hello, Admin</p>
                          <div className="flex flex-col items-start">
-                              <CustomLink to="/dashboard" className="link">
+                              <CustomLink to="/admin/dashboard" className="link">
                                    <div className="flex items-center">
                                         <img src='/tachometer.png' alt='hi' className=" " style={{ width: '30px', height: '22px', marginBottom: '5px', marginLeft: "-2px", marginRight: "8px" }}/>
                                         <p className='mb-2 Content-Nav-Admin'>Dashboard</p>

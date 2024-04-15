@@ -19,6 +19,7 @@ import "../src/AppTw.css";
 import AdminNav from "./components/adminNav";
 import Comments from "./components/pages/admin/comments";
 import Panel from "./components/pages/admin/panel";
+import Dashboard from "./components/pages/admin/dashboard";
 
 function App() {
   const location = useLocation();
@@ -36,7 +37,8 @@ function App() {
     "/submit",
     "/Submitted",
     "/Recipe",
-    "/Admin/Comments"
+    "/Admin/Comments",
+    "/Admin/Dashboard"
   ];
 
   const showNavbarAndFooter = showNavbarAndFooterRoutes.includes(location.pathname);
@@ -60,6 +62,7 @@ function App() {
         <Route path="/Admin/Comments" element={<Comments />} /> 
         <Route path="/admin/Panel" element={<Panel />} /> 
         <Route path="/admin/arecipes" element={<Arecipes />} /> 
+        <Route path="/admin/dashboard" element={<Dashboard />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>
