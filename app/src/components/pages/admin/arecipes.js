@@ -4,17 +4,23 @@ import CustomLink from '../../CustomLink';
 
 export default function Arecipes() {
   const [recipes, setRecipes] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
   const recipesPerPage = 10;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data2.json');
+        const response = await fetch('http://localhost:5000/api/recipes', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+
         const data = await response.json();
         console.log('Fetched data:', data);
-        setRecipes(data.recipes || []); 
+        setRecipes(data.data || []);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -23,7 +29,17 @@ export default function Arecipes() {
     fetchData();
   }, []);
 
-  const totalPages = Math.ceil(recipes.length / recipesPerPage);
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value.toLowerCase());
+    setCurrentPage(1);
+  };
+
+  const filteredRecipes = recipes.filter(recipe => {
+    const title = recipe.title || ''; 
+    return title.toLowerCase().includes(searchQuery);
+  });
+
+  const totalPages = Math.ceil(filteredRecipes.length / recipesPerPage);
 
   const pageNumbers = [];
   for (let i = 1; i <= totalPages; i++) {
@@ -37,16 +53,6 @@ export default function Arecipes() {
   const indexOfLastRecipe = currentPage * recipesPerPage;
   const indexOfFirstRecipe = indexOfLastRecipe - recipesPerPage;
 
-  const handleSearch = (e) => {
-    setSearchQuery(e.target.value.toLowerCase());
-    setCurrentPage(1);
-  };
-
-  const filteredRecipes = recipes.filter(recipe => {
-    const title = recipe.title || ''; 
-    return title.toLowerCase().includes(searchQuery);
-  });
-
   const currentRecipes = filteredRecipes.slice(indexOfFirstRecipe, indexOfLastRecipe);
 
   const handleEdit = (id) => {
@@ -56,13 +62,6 @@ export default function Arecipes() {
   const handleDelete = (id) => {
     console.log(`Delete recipe with id ${id}`);
   };
-  
-  const handleView = (id) => {
-    console.log(`View recipe with id ${id}`);
-    return <CustomLink to={`/recipe/${id}`} />;
-  };
-
-  console.log(handleView)
 
   return (
     <div className="flex">
