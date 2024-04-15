@@ -20,6 +20,7 @@ import AdminNav from "./components/adminNav";
 import Comments from "./components/pages/admin/comments";
 import Panel from "./components/pages/admin/panel";
 import Dashboard from "./components/pages/admin/dashboard";
+import Adduser from "./components/pages/admin/adduser";
 
 function App() {
   const location = useLocation();
@@ -38,7 +39,8 @@ function App() {
     "/Submitted",
     "/Recipe",
     "/Admin/Comments",
-    "/Admin/Dashboard"
+    "/Admin/Dashboard",
+    "/Admin/Adduser",
   ];
 
   const showNavbarAndFooter = showNavbarAndFooterRoutes.includes(location.pathname);
@@ -63,6 +65,7 @@ function App() {
         <Route path="/admin/Panel" element={<Panel />} /> 
         <Route path="/admin/arecipes" element={<Arecipes />} /> 
         <Route path="/admin/dashboard" element={<Dashboard />} /> 
+        <Route path="/admin/adduser" element={<Adduser />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>
