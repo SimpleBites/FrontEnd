@@ -9,7 +9,9 @@ export default function AdminNav() {
           <div className="Container-Nav-Admin">
                <div className="flex justify-center">
                     <div className="flex flex-col items-center" >
-                         <img src='/logo.png' className="logo" alt='hi' style={{ width: '170px', height: '170px', marginRight: '150px' }} />
+                         <CustomLink to="../Home" >
+                         <img src='/logo.png' className="logo" alt='hi' style={{ width: '170px', height: '170px', marginRight: '320px' }} />
+                         </CustomLink>
                          <p className="Title-Nav-Admin">Hello, Admin</p>
                          <div className="flex flex-col items-start">
                               <CustomLink to="/dashboard" className="link">
@@ -30,7 +32,7 @@ export default function AdminNav() {
                                         <p className='mb-2 Content-Nav-Admin'>Recipes</p>
                                    </div>
                               </CustomLink>
-                              <CustomLink to="/panel" className="link">
+                              <CustomLink to="/admin/panel" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faUser} className='admin-nav-icons' />
                                         <p className='mb-2 Content-Nav-Admin'>Users</p>

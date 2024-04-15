@@ -18,7 +18,7 @@ import Arecipes from "./components/pages/admin/arecipes"
 import "../src/AppTw.css";
 import AdminNav from "./components/adminNav";
 import Comments from "./components/pages/admin/comments";
-import Panel from "./components/pages/panel";
+import Panel from "./components/pages/admin/panel";
 
 function App() {
   const location = useLocation();
@@ -58,7 +58,7 @@ function App() {
         <Route path="/Recipe" element={<Recipe />} />
         <Route path="/Admin/*" element={<AdminWithLayout />} /> 
         <Route path="/Admin/Comments" element={<Comments />} /> 
-        <Route path="/Panel" element={<Panel />} /> 
+        <Route path="/admin/Panel" element={<Panel />} /> 
         <Route path="/admin/arecipes" element={<Arecipes />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}

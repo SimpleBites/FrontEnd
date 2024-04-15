@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import AdminNav from '../adminNav';
-import "./admin.css";
+import AdminNav from '../../adminNav';
+import "../admin.css";
 
 export default function Panel() {
   const [users, setUsers] = useState([]);
