@@ -13,6 +13,7 @@ import Favorites from "./components/pages/favorites";
 import Submit from "./components/pages/submit";
 import Submitted from "./components/pages/submitted";
 import Recipe from "./components/pages/recipe";
+import Arecipes from "./components/pages/admin/arecipes"
 
 import "../src/AppTw.css";
 import AdminNav from "./components/adminNav";
@@ -58,6 +59,7 @@ function App() {
         <Route path="/Admin/*" element={<AdminWithLayout />} /> 
         <Route path="/Admin/Comments" element={<Comments />} /> 
         <Route path="/Panel" element={<Panel />} /> 
+        <Route path="/admin/arecipes" element={<Arecipes />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>

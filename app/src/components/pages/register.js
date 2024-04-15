@@ -66,7 +66,7 @@ export default function Register() {
           <div className="flex flex-col justify-center items-center h-screen mb-6">
                <h1 className="login mb-4">Test</h1>
                <div className="flex justify-between">
-                    <div className="selected">
+                    <div className="selected8">
                          <CustomLink to="/Register">
                               <h2 className="custom-text top-text-reg">R E G I S T E R&nbsp;&nbsp;&nbsp;</h2>
                          </CustomLink>

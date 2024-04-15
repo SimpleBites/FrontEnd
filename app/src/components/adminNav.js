@@ -14,7 +14,7 @@ export default function AdminNav() {
                          <div className="flex flex-col items-start">
                               <CustomLink to="/dashboard" className="link">
                                    <div className="flex items-center">
-                                        <img src='/tachometer.png' className=" " style={{ width: '30px', height: '22px', marginBottom: '5px', marginLeft: "-2px", marginRight: "8px" }}/>
+                                        <img src='/tachometer.png' alt='hi' className=" " style={{ width: '30px', height: '22px', marginBottom: '5px', marginLeft: "-2px", marginRight: "8px" }}/>
                                         <p className='mb-2 Content-Nav-Admin'>Dashboard</p>
                                    </div>
                               </CustomLink>
@@ -24,7 +24,7 @@ export default function AdminNav() {
                                         <p className='mb-2 Content-Nav-Admin'>Comments</p>
                                    </div>
                               </CustomLink>
-                              <CustomLink to="/Admin/recipes" className="link">
+                              <CustomLink to="/Admin/arecipes" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faUtensils} className='admin-nav-icons' />
                                         <p className='mb-2 Content-Nav-Admin'>Recipes</p>
