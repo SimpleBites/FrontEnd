@@ -1,4 +1,3 @@
-
 .blue-bar-2 {
   width: 90%;
   background-color: #365486;
@@ -13,16 +12,16 @@
   margin-left: 20px;
 }
 
-.text-align-contact {
+.text-align-adduser {
   text-align: left; 
   color: white;
+  margin-left: 27px;
 }
 
-.text-area-contact {
-  width: 40%; 
+.text-area-adduser {
+  width: 30%; /* Adjust width as needed */
   padding: 6px;
-  margin-left: 24px;
-  margin-right: 700px;
+  margin-right: 107vh;
   background-color: #69A5C0;
   
 }
@@ -30,29 +29,23 @@
 .sub-button5 {
   padding: 6px 20px;
   display: flex;
-  margin-top: -10px;
+  margin-top: 10px;
   margin-left: 25px;
   background-color: #365486;
   color: white;
 }
 
-
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .form-label {
   margin-bottom: 5px;
   text-align: left;
-  
 }
 
 .form-input {
   margin-bottom: 10px;
-  
-
 }
-
-

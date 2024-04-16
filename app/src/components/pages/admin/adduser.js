@@ -1,6 +1,8 @@
+// Adduser.js
+
 import React, { useState } from 'react';
 import AdminNav from '../../adminNav';
-import "../admin/adduser.css"
+import "./adduser.css";
 
 export default function Adduser() {
     const [formData, setFormData] = useState({
@@ -34,7 +36,7 @@ export default function Adduser() {
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <div className="form-label">
-                                <label htmlFor="username" className="text-align-contact">Username</label>
+                                <label htmlFor="username" className="text-align-adduser">Username</label>
                             </div>
                             <div className="form-input">
                                 <input
@@ -43,14 +45,14 @@ export default function Adduser() {
                                     name="username"
                                     value={formData.username}
                                     onChange={handleChange}
-                                    className="text-area-contact"
+                                    className="text-area-adduser"
                                     required
                                 />
                             </div>
                         </div>
                         <div className="form-group">
                             <div className="form-label">
-                                <label htmlFor="email" className="text-align-contact">Email</label>
+                                <label htmlFor="email" className="text-align-adduser">Email</label>
                             </div>
                             <div className="form-input">
                                 <input
@@ -59,14 +61,14 @@ export default function Adduser() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="text-area-contact"
+                                    className="text-area-adduser"
                                     required
                                 />
                             </div>
                         </div>
                         <div className="form-group">
                             <div className="form-label">
-                                <label htmlFor="password" className="text-align-contact">Password</label>
+                                <label htmlFor="password" className="text-align-adduser">Password</label>
                             </div>
                             <div className="form-input">
                                 <input
@@ -75,7 +77,7 @@ export default function Adduser() {
                                     name="password"
                                     value={formData.password}
                                     onChange={handleChange}
-                                    className="text-area-contact"
+                                    className="text-area-adduser"
                                     required
                                 />
                             </div>
