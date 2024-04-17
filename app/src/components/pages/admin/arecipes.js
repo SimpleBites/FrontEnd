@@ -63,6 +63,8 @@ export default function Arecipes() {
     console.log(`Delete recipe with id ${id}`);
   };
 
+  var views = 56;
+
   return (
     <div className="flex">
       <AdminNav />
@@ -77,6 +79,11 @@ export default function Arecipes() {
               value={searchQuery}
               onChange={handleSearch}
             />
+            <CustomLink to="/admin/aupload">
+            <button className="mr-4 py-2 px-4 mr-10 mt-10 search-user-thingy">
+              <p className="btn-content-arecipes">+ add recipe</p>
+            </button>
+            </CustomLink>
           </div>
         </div>
         <div className='table-container'>
@@ -102,7 +109,7 @@ export default function Arecipes() {
                  <td>{recipe.description}</td>
                  <td>{recipe.cooking_time}</td>
                  <td>{recipe.difficulty}</td>
-                 <td>{recipe.views}</td>
+                 <td>{views}</td>
                  <td>
                     <div className="flex">
                       <button className='mr-2 mt-6 edit-btn' onClick={() => handleEdit(recipe.id)}>edit</button>
@@ -127,6 +134,8 @@ export default function Arecipes() {
               {number}
             </button>
           ))}
+
+  
         </div>
       </div>
     </div>

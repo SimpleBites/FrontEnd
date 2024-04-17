@@ -2,7 +2,7 @@
      background-color: #7FC7D9;
      width: 200px;
      color: #365486;
-     font-family: "Inter", sans-serif;
+     font-family: "Inter", sans-serif;  
 }
 
 
@@ -174,4 +174,14 @@
      margin-top: 3px!important;
      margin-right: -10px;
      margin-left: 2px;
+}
+
+.btn-content-arecipes {
+     font-size: 22px;
+     color: white;
+     font-family: "Inter", sans-serif;
+}
+ 
+.plus-styling {
+     font-size: 26px;
 }

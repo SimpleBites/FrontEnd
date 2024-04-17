@@ -6,8 +6,8 @@ import { faComment, faMagnifyingGlass, faUser, faUtensils } from '@fortawesome/f
 
 export default function AdminNav() {
      return (
-          <div className="Container-Nav-Admin">
-               <div className="flex justify-center">
+          <div className="Container-Nav-Admin full-h">
+               <div className="flex justify-center ">
                     <div className="flex flex-col items-center" >
                          <CustomLink to="../Home" >
                          <img src='/logo.png' className="logo" alt='hi' style={{ width: '170px', height: '170px', marginRight: '320px' }} />

@@ -19,6 +19,8 @@ import "../src/AppTw.css";
 import AdminNav from "./components/adminNav";
 import Comments from "./components/pages/admin/comments";
 import Panel from "./components/pages/admin/panel";
+import Aupload from "./components/pages/admin/aupload";
+import Aaprove from "./components/pages/admin/aapprove";
 
 function App() {
   const location = useLocation();
@@ -60,6 +62,8 @@ function App() {
         <Route path="/Admin/Comments" element={<Comments />} /> 
         <Route path="/admin/Panel" element={<Panel />} /> 
         <Route path="/admin/arecipes" element={<Arecipes />} /> 
+        <Route path="/admin/aupload" element={<Aupload />} /> 
+        <Route path="/admin/aApprove" element={<Aaprove />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>

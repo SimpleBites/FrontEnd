@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AdminNav from '../../adminNav';
 import "../admin.css";
+import CustomLink from '../../CustomLink';
 
 export default function Panel() {
   const [users, setUsers] = useState([]);
@@ -13,7 +14,7 @@ export default function Panel() {
       try {
         const response = await fetch('/data4.json');
         const data = await response.json();
-        console.log('Fetched data:', data); // Log the fetched data
+        console.log('Fetched data:', data); 
         setUsers(data.users || []);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -66,6 +67,11 @@ export default function Panel() {
               value={searchQuery}
               onChange={handleSearch}
             />
+            <CustomLink to="/Admin/createuser">
+            <button className="mr-4 py-2 px-4 mr-10 mt-10 search-user-thingy">
+              <p className="btn-content-arecipes"><span className='plus-styling'>+</span> create user</p>
+            </button>
+            </CustomLink>
           </div>
         </div>
         <div className='table-container'>
