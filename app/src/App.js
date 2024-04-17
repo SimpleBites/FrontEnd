@@ -22,6 +22,8 @@ import Panel from "./components/pages/admin/panel";
 import Dashboard from "./components/pages/admin/dashboard";
 import Adduser from "./components/pages/admin/adduser";
 import Rejected from "./components/pages/admin/rejected";
+import Aapprove from "./components/pages/admin/aapprove";
+import Asubmitted from "./components/pages/admin/Asubmitted";
 
 function App() {
   const location = useLocation();
@@ -68,6 +70,8 @@ function App() {
         <Route path="/admin/dashboard" element={<Dashboard />} /> 
         <Route path="/admin/adduser" element={<Adduser />} /> 
         <Route path="/admin/rejected" element={<Rejected />} /> 
+        <Route path="/admin/aapprove" element={<Aapprove />} /> 
+        <Route path="/admin/asubmitted" element={<Asubmitted />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>

@@ -21,12 +21,12 @@ export default function Aapprove() {
   const [deleteIndex, setDeleteIndex] = useState(-1);
   const [type, setType] = useState('');
 
-  const id = 2;
+  const id = 4;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/recipes', {
+        const response = await fetch(`http://localhost:5000/api/recipes/`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

@@ -67,7 +67,7 @@ export default function Panel() {
               value={searchQuery}
               onChange={handleSearch}
             />
-            <CustomLink to="/Admin/createuser">
+            <CustomLink to="/Admin/adduser">
             <button className="mr-4 py-2 px-4 mr-10 mt-10 search-user-thingy">
               <p className="btn-content-arecipes"><span className='plus-styling'>+</span> create user</p>
             </button>

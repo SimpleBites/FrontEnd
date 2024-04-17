@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import AdminNav from '../../adminNav';
+import CustomLink from '../../CustomLink';
 
-export default function Rejected() {
+export default function Asubmitted() {
   const [recipes, setRecipes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const recipesPerPage = 10;
@@ -50,17 +51,17 @@ export default function Rejected() {
 
   var views = 56;
 
-  const handleDelete = (id) => {
-     console.log(`Delete recipe with id ${id}`);
-   };
- 
+  const handleView = (recipeId) => {
+    // Handle view button click
+    console.log('Viewing recipe with ID:', recipeId);
+  };
 
   return (
     <div className="flex">
       <AdminNav/>
       <div className="container-whole-page w-full">
         <div className="flex items-center justify-between mb-4">
-          <h1 className="Users-panel-css ml-5 mt-4">Rejected Recipes</h1>
+          <h1 className="Users-panel-css ml-5 mt-4">Submitted Recipes</h1>
           <div className="flex"></div>
         </div>
         <div className='table-container'>
@@ -75,28 +76,32 @@ export default function Rejected() {
                 <th className='table-content'>difficulty</th>
                 <th className='table-content'>views</th>
                 <th className='table-content'>status</th>
-                <th className='table-content'>action</th>
+                <th className='table-content'>Action</th>
               </tr>
             </thead>
             <tbody>
               {currentRecipes.map(recipe => (
-                 <tr key={recipe.id}>
-                 <td>{recipe.id}</td>
-                 <td><img src={recipe.image} style={{ height: "60px", marginLeft: "10px" }} alt={recipe.title} /></td>
-                 <td>{recipe.title}</td>
-                 <td>{recipe.description}</td>
-                 <td>{recipe.cooking_time}</td>
-                 <td>{recipe.difficulty}</td>
-                 <td>{views}</td>
-                 <td>
+                <tr key={recipe.id}>
+                  <td>{recipe.id}</td>
+                  <td><img src={recipe.image} style={{ height: "60px", marginLeft: "10px" }} alt={recipe.title} /></td>
+                  <td>{recipe.title}</td>
+                  <td>{recipe.description}</td>
+                  <td>{recipe.cooking_time}</td>
+                  <td>{recipe.difficulty}</td>
+                  <td>{views}</td>
+                  <td>
                     <div className="flex justify-center">
-                         <div className='delete-btn2' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          <span className='reject-content'>Rejected</span>
+                      <div className='status-btn' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <span className='reject-content'>submitted</span>
+                      </div>
                     </div>
-               </div>
                   </td>
                   <td>
-                  <button className='delete-btn mr-3' onClick={() => handleDelete(recipe.id)}>delete</button>
+                    <div className="flex justify-center">
+                      <CustomLink to={`/admin/aapprove/${recipe.id}`}>
+                        <button className='edit-btn2' onClick={() => handleView(recipe.id)}>View</button>
+                      </CustomLink>
+                    </div>
                   </td>
                 </tr>
               ))}

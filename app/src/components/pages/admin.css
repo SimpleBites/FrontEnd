@@ -200,3 +200,12 @@
      font-weight: bold;
      font-size: 20px;
 }
+.status-btn {
+     color: white;
+     font-size: 22px;
+     width: 140px;
+     height: 35px;
+     background-color: rgb(30, 209, 30);
+     margin-top: 3px;
+}
+

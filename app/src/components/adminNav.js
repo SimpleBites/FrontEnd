@@ -2,7 +2,7 @@ import React from 'react';
 import CustomLink from './CustomLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./pages/admin.css"
-import { faComment, faMagnifyingGlass, faUser, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpFromBracket, faComment, faMagnifyingGlass, faUser, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 export default function AdminNav() {
      return (
@@ -17,31 +17,38 @@ export default function AdminNav() {
                               <CustomLink to="/admin/dashboard" className="link">
                                    <div className="flex items-center">
                                         <img src='/tachometer.png' alt='hi' className=" " style={{ width: '30px', height: '22px', marginBottom: '5px', marginLeft: "-2px", marginRight: "8px" }}/>
-                                        <p className='mb-2 Content-Nav-Admin'>Dashboard</p>
+                                        <p className='mb-3 Content-Nav-Admin'>Dashboard</p>
                                    </div>
                               </CustomLink>
                               <CustomLink to="/admin/Comments" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faComment} className='admin-nav-icons' />
-                                        <p className='mb-2 Content-Nav-Admin'>Comments</p>
+                                        <p className='mb-3 Content-Nav-Admin'>Comments</p>
                                    </div>
                               </CustomLink>
                               <CustomLink to="/Admin/arecipes" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faUtensils} className='admin-nav-icons' />
-                                        <p className='mb-2 Content-Nav-Admin'>Recipes</p>
+                                        <p className='mb-3 Content-Nav-Admin'>Recipes</p>
                                    </div>
                               </CustomLink>
                               <CustomLink to="/admin/panel" className="link">
                                    <div className="flex items-center">
                                         <FontAwesomeIcon icon={faUser} className='admin-nav-icons' />
-                                        <p className='mb-2 Content-Nav-Admin'>Users</p>
+                                        <p className='mb-3 Content-Nav-Admin'>Users</p>
                                    </div>
                               </CustomLink>
+                              <CustomLink to="/admin/Asubmitted" className="link">
                                    <div className="flex items-center">
+                                        <FontAwesomeIcon icon={faArrowUpFromBracket} className='admin-nav-icons' />
+                                        <p className='mb-3 Content-Nav-Admin'>Submitted</p>
+                                   </div>
+                              </CustomLink>
+                                   <div className="flex items-center ">
                                         <FontAwesomeIcon icon={faMagnifyingGlass} className='admin-nav-icons'/>
                                         <input className='mb-2 Content-Nav-Admin2' placeholder='search' />
                                    </div>
+                                   
 
                          </div>
                     </div>
