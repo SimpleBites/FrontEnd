@@ -19,14 +19,9 @@ import "../src/AppTw.css";
 import AdminNav from "./components/adminNav";
 import Comments from "./components/pages/admin/comments";
 import Panel from "./components/pages/admin/panel";
-<<<<<<< HEAD
-import Aupload from "./components/pages/admin/aupload";
-import Aaprove from "./components/pages/admin/aapprove";
-import Rejected from "./components/pages/admin/rejected";
-=======
 import Dashboard from "./components/pages/admin/dashboard";
 import Adduser from "./components/pages/admin/adduser";
->>>>>>> 8db2eabf0de5b14b741b00a1010a1aa5eeee60eb
+import Rejected from "./components/pages/admin/rejected";
 
 function App() {
   const location = useLocation();
@@ -70,14 +65,9 @@ function App() {
         <Route path="/Admin/Comments" element={<Comments />} /> 
         <Route path="/admin/Panel" element={<Panel />} /> 
         <Route path="/admin/arecipes" element={<Arecipes />} /> 
-<<<<<<< HEAD
-        <Route path="/admin/aupload" element={<Aupload />} /> 
-        <Route path="/admin/aApprove" element={<Aaprove />} /> 
-        <Route path="/admin/Rejected" element={<Rejected />} /> 
-=======
         <Route path="/admin/dashboard" element={<Dashboard />} /> 
         <Route path="/admin/adduser" element={<Adduser />} /> 
->>>>>>> 8db2eabf0de5b14b741b00a1010a1aa5eeee60eb
+        <Route path="/admin/rejected" element={<Rejected />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>
