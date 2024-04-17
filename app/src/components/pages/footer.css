@@ -1655,3 +1655,9 @@ li {
 	background-color: #FF0000;
 	margin-left: 100px;
 }
+
+.new-no-text {
+	user-select: none;
+	opacity: 0;
+	color: white;
+}
