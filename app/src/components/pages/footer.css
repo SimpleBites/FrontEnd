@@ -1598,3 +1598,64 @@ li {
 	text-align: center; 	
 	margin-top: 11px;
 }
+
+.delete-popup {
+	width: 466px;
+	height: 290px;
+	background-color: #7FC7D9;
+
+}
+
+.delete-popup-text {
+	color: #365486;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	user-select: none;
+
+}
+
+.Xmark {
+	height: 32px;
+	width: 42px;
+	color: #365486;
+}
+
+.Xmark:hover {
+	cursor: pointer;
+}
+
+.delete-popup-content {
+	margin-top: 55px !important;
+}
+.delete-popup-buttons {
+	margin-top: 75px;
+}
+
+.popup-text {
+	color: #365486;
+	font-size: 20px;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+}
+
+.cancel-button {
+	color: white;
+	font-size: 25px;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+	width: 139px;
+	height: 39px;
+	background-color: #36548650;
+}
+
+.delete-button {
+	color: white;
+	font-size: 25px;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+	width: 139px;
+	height: 39px;
+	background-color: #FF0000;
+	margin-left: 100px;
+}

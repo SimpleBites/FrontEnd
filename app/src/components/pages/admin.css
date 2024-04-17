@@ -185,3 +185,17 @@
 .plus-styling {
      font-size: 26px;
 }
+
+.delete-btn2 {
+     color: white;
+     font-size: 22px;
+     width: 250px;
+     height: 41px;
+     background-color: red;
+}
+
+.reject-content {
+     font-family: "Inter", sans-serif;
+     font-weight: bold;
+     font-size: 20px;
+}

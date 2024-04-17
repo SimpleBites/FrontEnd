@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock as fasClock, faTrashCan, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faClock as fasClock, faTrashCan, faUsers, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import '../footer.css';
 import AdminNav from '../../adminNav';
+import CustomLink from '../../CustomLink';
 
 export default function Aapprove() {
   const [inputValues, setInputValues] = useState(['']);
@@ -16,6 +17,9 @@ export default function Aapprove() {
   const [recipeImg, setRecipeImg] = useState('');
   const [IngreValues, setIngreValues] = useState(['']);
   const [toolValues, setToolValues] = useState(['']);
+  const [showDeletePopup, setShowDeletePopup] = useState(false);
+  const [deleteIndex, setDeleteIndex] = useState(-1);
+  const [type, setType] = useState('');
 
   const id = 2;
 
@@ -31,7 +35,7 @@ export default function Aapprove() {
 
         const responseData = await response.json();
         console.log('Fetched data:', responseData);
-        
+
         if (responseData && responseData.data) {
           const recipe = responseData.data.find(recipe => recipe.id === id);
           if (recipe) {
@@ -70,14 +74,6 @@ export default function Aapprove() {
     setHasValue(hasValueNow);
   };
 
-  const handleDelete = (index, event) => {
-    event.stopPropagation();
-    const newInputValues = [...inputValues];
-    newInputValues.splice(index, 1);
-    setInputValues(newInputValues);
-    console.log(`Delete recipe instruction ${index}`);
-  };
-
   const handleIngreChange = (index, value) => {
     const newIngreValues = [...IngreValues];
     newIngreValues[index] = value;
@@ -95,6 +91,7 @@ export default function Aapprove() {
     const newIngreValues = [...IngreValues];
     newIngreValues.splice(index, 1);
     setIngreValues(newIngreValues);
+    setShowDeletePopup(false); 
   };
 
   const handleToolChange = (index, value) => {
@@ -114,6 +111,7 @@ export default function Aapprove() {
     const newToolValues = [...toolValues];
     newToolValues.splice(index, 1);
     setToolValues(newToolValues);
+    setShowDeletePopup(false); 
   };
 
   const handleSubmit = (event) => {
@@ -145,18 +143,44 @@ export default function Aapprove() {
     setHasValue(!extraValue);
   };
 
+  const handleDelete = (index) => {
+    const newInputValues = [...inputValues];
+    newInputValues.splice(index, 1);
+    setInputValues(newInputValues);
+    console.log(`Delete recipe instruction ${index}`);
+    setShowDeletePopup(false);
+  };
+
+  const showDeleteConfirmation = (index, type) => {
+    setShowDeletePopup(true);
+    setDeleteIndex(index);
+    setType(type); 
+  };
+
+  const handlePopupDelete = () => {
+    if (type === 'ingredient') {
+      handleIngreDelete(deleteIndex);
+    } else if (type === 'tool') {
+      handleToolDelete(deleteIndex);
+    } else {
+      handleDelete(deleteIndex);
+    }
+  };
+
   return (
     <div className="flex">
       <AdminNav />
-      <div className=" max-w-screen-lg container-Aupload ml-20">
-        <h1 className='title-approve'>Recipes - <span>{title}</span></h1>
+      <div className="max-w-screen-lg container-Aupload ml-20">
         <form onSubmit={handleSubmit}>
+          <h1 className='title-approve'>Recipes - <span>{title}</span></h1>
           <div className="blue-bar-approve flex flex-col md:flex-row justify-end">
             <div className="approve-btn-styling mb-2 md:mr-2">
               <button>Approve</button>
             </div>
             <div className="decline-btn-styling mr-10">
-              <button>Decline</button>
+              <CustomLink to="/admin/rejected">
+              <button type="button">reject</button>
+              </CustomLink>
             </div>
           </div>
 
@@ -245,10 +269,10 @@ export default function Aapprove() {
                           }}
                           style={{ minHeight: '33px', resize: 'none', overflow: 'hidden', width: '280px' }}
                           maxLength={250}
-                       
+
                         />
                         <div className='btn-delete-color'>
-                          <button type="button" onClick={(event) => handleDelete(index, event)}><FontAwesomeIcon icon={faTrashCan} className='Trashcan2' /></button>
+                          <button type="button" onClick={() => showDeleteConfirmation(index, 'instruction')}><FontAwesomeIcon icon={faTrashCan} className='Trashcan2' /></button>
                         </div>
                       </div>
                     </div>
@@ -270,7 +294,7 @@ export default function Aapprove() {
                       onChange={(e) => handleIngreChange(index, e.target.value)}
                     />
                     <div className="btn-delete-color2">
-                      <button type="button" onClick={() => handleIngreDelete(index)}><FontAwesomeIcon icon={faTrashCan} className='Trashcan' /></button>
+                      <button type="button" onClick={() => showDeleteConfirmation(index, 'ingredient')}><FontAwesomeIcon icon={faTrashCan} className='Trashcan' /></button>
                     </div>
                   </div>
                 ))}
@@ -287,18 +311,37 @@ export default function Aapprove() {
                       onChange={(e) => handleToolChange(index, e.target.value)}
                     />
                     <div className="btn-delete-color2">
-                      <button type="button" onClick={() => handleToolDelete(index)}><FontAwesomeIcon icon={faTrashCan} className='Trashcan' /></button>
+                      <button type="button" onClick={() => showDeleteConfirmation(index, 'tool')}><FontAwesomeIcon icon={faTrashCan} className='Trashcan' /></button>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="vertical-spans">
-                <span className="block mb-2">EXTRA TEXT FOR SPACE</span>
-              </div>
             </div>
           </div>
+          <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '9999' }}>
+            {showDeletePopup && (
+              <div className="delete-popup shadow-lg p-6">
+                <div className="flex justify-between">
+                  <h2 className="delete-popup-text">delete</h2>
+                  <span className="delete-popup-close" onClick={() => setShowDeletePopup(false)}>
+                    <FontAwesomeIcon icon={faXmark} className='Xmark' />
+                  </span>
+                </div>
+                <div className="delete-popup-content mt-4">
+                  <p className='popup-text'>Are you sure you want to delete this item?</p>
+                  <div className="delete-popup-buttons">
+                    <button className="cancel-button mr-4" onClick={() => setShowDeletePopup(false)}>Cancel</button>
+                    <button className="delete-button" onClick={handlePopupDelete}>Delete</button>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
         </form>
       </div>
+      <div className="vertical-spans"></div>
     </div>
   );
+
 }

@@ -21,6 +21,7 @@ import Comments from "./components/pages/admin/comments";
 import Panel from "./components/pages/admin/panel";
 import Aupload from "./components/pages/admin/aupload";
 import Aaprove from "./components/pages/admin/aapprove";
+import Rejected from "./components/pages/admin/rejected";
 
 function App() {
   const location = useLocation();
@@ -64,6 +65,7 @@ function App() {
         <Route path="/admin/arecipes" element={<Arecipes />} /> 
         <Route path="/admin/aupload" element={<Aupload />} /> 
         <Route path="/admin/aApprove" element={<Aaprove />} /> 
+        <Route path="/admin/Rejected" element={<Rejected />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>
