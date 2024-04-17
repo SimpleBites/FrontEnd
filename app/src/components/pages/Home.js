@@ -5,21 +5,32 @@ import CustomLink from '../CustomLink';
 
 const Home = () => {
   const [recipes, setRecipes] = useState([]);
-  const tags = ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"];
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data2.json');
+        const response = await fetch('http://localhost:5000/api/recipes', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+  
         const data = await response.json();
-        setRecipes(data.recipes);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
 
-    fetchData();
-  }, []);
+        console.log(data.data)
+        setRecipes(data.data);
+        
+        
+      } catch (error) {
+        console.error(error);
+      }
+      
+    }
+    fetchData()
+  
+  }, [])
 
   return (
     <div className="min-h-screen">
@@ -38,9 +49,7 @@ const Home = () => {
               <div className="tags-container">
                 <h4 className="text-xl font-bold mb-4 text-black">Recipes</h4>
                 <div className="tags-list">
-                  {tags.map((tag, index) => (
-                    <a key={index} href="/tag-template" className="block text-blue-500 hover:underline mb-2">{tag}</a>
-                  ))}
+                  
                 </div>
               </div>
             </div>
@@ -49,11 +58,11 @@ const Home = () => {
                 {recipes.map((recipe, index) => (
                   <div>
                   <FavoriteButton isFavorite={recipe.favorite} onToggle={() => console.log("Toggle favorite")} />
-                  <CustomLink key={index} className="recipe" to={`/recipe/${index}`}>
+                  <CustomLink key={recipe.id} className="recipe" to={`/recipe/${recipe.id}`}>
                     <div className="relative">
                       <i className="fas fa-heart absolute top-2 right-2 text-red-500"></i>
                       <img
-                        src={recipe.image}
+                        src="/pancakes.png"
                         className="img recipe-img"
                         alt={recipe.title}
                       />

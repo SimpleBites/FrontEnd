@@ -28,7 +28,7 @@ const Recipe = ({ recipe, onToggleFavorite }) => {
         </button>
         <CustomLink to={`/recipe/${recipe.id}`}>
           <img
-            src={recipe.image}
+            src="/pancakes.png"
             alt={recipe.title}
             className="object-cover"
             style={{ width: '275px', height: '275px', margin: '5px', marginBottom: '30px' }}
@@ -47,16 +47,28 @@ export default function Recipes() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data2.json');
+        const response = await fetch('http://localhost:5000/api/recipes', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+  
         const data = await response.json();
-        setRecipes(data.recipes);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
 
-    fetchData();
-  }, []);
+      
+        console.log(data.data)
+        setRecipes(data.data);
+        //const filteredRecipe = data.find(recipe => data.id === id);
+        
+      } catch (error) {
+        console.error(error);
+      }
+      
+    }
+    fetchData()
+  
+  }, [])
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(searchQuery.toLowerCase())

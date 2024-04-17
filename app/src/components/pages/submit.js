@@ -5,16 +5,19 @@ import { faClock as fasClock, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 
 import './footer.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Submit() {
   const [inputValues, setInputValues] = useState(['']);
   const [extraValue, setHasValue] = useState(false); 
   const [selectedImage, setSelectedImage] = useState(null);
+  const [imageName, setImageName] = useState([])
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [prepTime, setPrepTime] = useState('');
   const [cookTime, setCookTime] = useState('');
   const [servings, setServings] = useState('');
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleBeforeUnload = (event) => {
@@ -33,8 +36,9 @@ export default function Submit() {
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
+    setImageName(file)
     const reader = new FileReader();
-
+    
     reader.onloadend = () => {
       setSelectedImage(reader.result);
     };
@@ -96,9 +100,9 @@ export default function Submit() {
     setToolValues(newToolValues);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-  
+    
     const requiredFieldsFilled =
       title.trim() !== '' &&
       description.trim() !== '' &&
@@ -116,9 +120,31 @@ export default function Submit() {
         inputValues,
         IngreValues,
         toolValues,
-        selectedImage
+        selectedImage,
       };
-      console.log(formData);
+
+     
+
+      try {
+        const response = await fetch('http://localhost:4000/recipes/create', {
+             method: 'POST',
+             headers: {
+                  'Content-Type': 'application/json',
+             },
+             
+             credentials: 'include',
+             body: JSON.stringify({formData, }),
+
+        });
+
+        const data = await response.json()
+        alert("Success! recipe created")
+        navigate("/profile")
+        
+      }catch(error){
+        console.log(error)
+      }
+       
     } else {
       alert('Please fill in all required fields and provide at least one instruction, ingredient, and tool before submitting.');
     }
@@ -126,10 +152,11 @@ export default function Submit() {
     setHasValue(!extraValue);
   };
 
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="w-full flex-grow max-w-screen-lg">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} encType='multipart/form-data'>
           <div className="text-center mt-10 mb-4">
             <h1 className="text-3xl mb-4 upload-rec">U P L O A D &nbsp; R E C I P E</h1>
             <button type="submit" className="SUB-BUTTON">S U B M I T</button>
@@ -141,6 +168,7 @@ export default function Submit() {
                 <input
                   id="file-upload"
                   type="file"
+                  name="file"
                   className="file-test"
                   onChange={handleImageChange}
                   ref={fileInputRef}
@@ -169,6 +197,7 @@ export default function Submit() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
+              
               <label className="block mt-4 mb-2">Description</label>
               <textarea
                 type="text"
@@ -190,6 +219,7 @@ export default function Submit() {
                     onChange={(e) => setPrepTime(e.target.value)}
                   />
                 </div>
+                <p className="absolute mt-28 ml-32">(in minutes)</p>
                 <div className="w-1/3 px-2">
                   <FontAwesomeIcon icon={faClock} className="sizing" />
                   <label className="block mb-2">Cook Time</label>
@@ -201,6 +231,7 @@ export default function Submit() {
                     onChange={(e) => setCookTime(e.target.value)}
                   />
                 </div>
+                
                 <div className="w-1/3 pl-2">
                   <FontAwesomeIcon icon={faUsers} className="sizing" />
                   <label className="block mb-2">Servings</label>

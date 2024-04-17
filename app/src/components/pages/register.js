@@ -16,7 +16,7 @@ export default function Register() {
      const [password1Error, setPassword1Error] = useState('');
      const [password2Error, setPassword2Error] = useState('');
 
-
+     
      const handleSubmit = async (event) => {
           event.preventDefault();
           try {
@@ -40,10 +40,9 @@ export default function Register() {
                setPassword2Error('');
                if(errors === undefined){
                     alert("register succesful! redirecting to homepage")
-                    navigate("/home")
+                    window.location.href = "/home";
                   } else{
                     errors.forEach(error => {
-                         console.log(error.path)
                          if (error.path === 'username') {
                               setUsernameError(error.msg);
                          } else if (error.path === 'email') {
@@ -55,8 +54,7 @@ export default function Register() {
                          }
                     });
                }
-               console.log(data.errors)
-
+              
           } catch (error) {
                console.log(error)
           }
