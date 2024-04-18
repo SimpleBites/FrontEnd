@@ -18,7 +18,7 @@ export default function Profile() {
         },
         credentials: 'include',
       });
-      window.location.href = "/login?logout=successful";
+      window.location.href = "/Login?logout=successful";
     } catch (error) {
       console.error(error);
     }

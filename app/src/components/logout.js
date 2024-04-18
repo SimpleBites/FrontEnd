@@ -11,7 +11,7 @@ const navigate = useNavigate();
         credentials: 'include',
       });
 
-      navigate("/login")
+      navigate("/Login")
 
 
     } catch (error) {
