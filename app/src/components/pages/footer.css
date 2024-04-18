@@ -5,6 +5,7 @@
 	background-color: #304a76;
 	color: white;
 	padding: 20px;
+	padding-bottom: 0px;
 	text-align: center;
 	width: 100%;
 	display: flex;
@@ -18,6 +19,7 @@
 	bottom: -1;
 	left: 0;
 	padding: 35px;
+	padding-top: 0px;
 	background-color: #365486;
 	width: 100%;
 	flex-direction: row !important;
@@ -92,11 +94,8 @@
 .bottom-nav {
 	width: 100%;
 	position: static;
-	/* or remove the position property */
 	top: 1;
-	/* This should be removed */
 	left: 0;
-	/* This should be removed */
 	background-color: #7fc7d9;
 	padding-bottom: 20px;
 	padding-top: 15px;
@@ -558,12 +557,12 @@
 	margin-bottom: 25px;
 }
 
-.selected {
+.selected8 {
 	display: inline-block;
 	position: relative;
 }
 
-.selected::after {
+.selected8::after {
 	content: "";
 	position: absolute;
 	bottom: -5px;
@@ -575,12 +574,12 @@
 	margin-left: 150px !important;
 }
 
-.selected2 {
+.login .selected2 {
 	display: inline-block;
 	position: relative;
 }
 
-.selected2::after {
+.login .selected2::after {
 	content: "";
 	position: absolute;
 	bottom: -5px;
@@ -592,7 +591,7 @@
 	margin-left: 30px !important;
 }
 
-.selected h2 {
+.login .selected h2 {
 	margin-bottom: 5px;
 }
 
@@ -667,7 +666,7 @@ li {
 	text-align: center;
 }
 
-.text {
+.text2 {
 	color: #365486;
 	font-size: 24px;
 	font-weight: bold;
@@ -731,12 +730,12 @@ li {
 	margin-bottom: 25px;
 }
 
-.selected {
+/* .selected {
 	display: inline-block;
 	position: relative;
-}
+} */
 
-.selected::after {
+/* .selected::after {
 	content: "";
 	position: absolute;
 	bottom: -5px;
@@ -746,7 +745,7 @@ li {
 	background-color: #365486;
 	margin-bottom: -10px !important;
 	margin-left: 150px !important;
-}
+} */
 
 .selected2 {
 	display: inline-block;
@@ -874,11 +873,7 @@ li {
 	text-align: center;
 }
 
-.text {
-	color: #365486;
-	font-size: 24px;
-	font-weight: bold;
-}
+
 
 .Lorem {
 	color: #365486;
@@ -962,7 +957,7 @@ li {
 	width: 547px !important;
 	height: 376px;
 	margin-right: 200px;
-	margin-left: -100px;
+	margin-left: -200px;
 }
 
 .file-upload-placeholder {
@@ -1016,13 +1011,6 @@ li {
 	/* Adjust the size of the image to fit within the input */
 }
 
-.input-field-test {
-	background-color: #f2f2f2;
-	width: 120px;
-	margin: 10px;
-	border: 2px solid #d9d9d9;
-	padding-left: 5px;
-}
 
 .hide-image {
 	background-image: none !important;
@@ -1048,11 +1036,7 @@ li {
 	color: white;
 }
 
-.selected-image {
-	width: 547px;
-	height: 376px;
-	margin-right: 200px;
-}
+
 
 .file-upload-placeholder {
 	width: 547px;
@@ -1512,3 +1496,168 @@ li {
     color: #365486;
      }
 
+.container-Aupload {
+	margin-left: 200px !important;
+}
+
+.blue-bar-approve {
+	width: 153%;
+     height: 65px; 
+     background-color: #365486;
+	color: white;
+	font-size: 25px;
+	margin-left: -200px;
+	font-weight: bold;
+	font-family: "Inter", sans-serif;
+	margin-left: -150px;
+	margin-bottom: 50px;
+}
+
+.btn-delete-color {
+	margin-left: 196px;
+	margin-top: -120px !important;
+	width: 34px;
+	height: 34px;
+	background-color: #FF000050;
+	padding-right: 8px;
+	border-radius: 3px;
+	border-color: #00000035;
+	border-width: 1px; 
+	border-style: solid; 
+}
+
+.btn-delete-color2 {
+	margin-left: -340px;
+	margin-top: 10px;
+	width: 42px;
+	height: 42px;
+	background-color: #FF000050;
+	padding-right: 8px;
+	border-radius: 3px;
+	border-color: #00000035;
+	border-width: 1px; /* Add border width */
+	border-style: solid; /* Add border style */
+}
+
+   
+
+.Trashcan {
+	height: 28px;
+	width: 25px;
+	margin-top: 6.5px;
+	margin-left: 8px;
+	color: red;
+}
+
+.input-field-test2 {
+	background-color: #f2f2f2;
+	width: 300px;
+	margin: 10px;
+	position: relative;
+	right: 200px !important;
+	border: 2px solid #d9d9d9;
+	padding-left: 5px;
+	height: 33px;
+	margin-bottom: 80px;
+	margin-top: 12px;
+}
+
+.Trashcan2 {
+	height: 25px;
+	width: 22px;
+	margin-top: 2px;
+	margin-left: 5px;
+	color: red;
+}
+
+.decline-btn-styling {
+	background-color: #FF0000;
+	width: 118px;
+	height: 42px;
+	text-align: center; 	
+	margin-top: 11px;
+}
+
+.title-approve {
+	font-size: 40px;
+	text-align: left; 
+	margin-left: -150px;
+	color: #365486;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+
+}
+.approve-btn-styling {
+	background-color: rgb(15, 196, 15);
+	width: 118px;
+	height: 42px;
+	text-align: center; 	
+	margin-top: 11px;
+}
+
+.delete-popup {
+	width: 466px;
+	height: 290px;
+	background-color: #7FC7D9;
+
+}
+
+.delete-popup-text {
+	color: #365486;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	user-select: none;
+
+}
+
+.Xmark {
+	height: 32px;
+	width: 42px;
+	color: #365486;
+}
+
+.Xmark:hover {
+	cursor: pointer;
+}
+
+.delete-popup-content {
+	margin-top: 55px !important;
+}
+.delete-popup-buttons {
+	margin-top: 75px;
+}
+
+.popup-text {
+	color: #365486;
+	font-size: 20px;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+}
+
+.cancel-button {
+	color: white;
+	font-size: 25px;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+	width: 139px;
+	height: 39px;
+	background-color: #36548650;
+}
+
+.delete-button {
+	color: white;
+	font-size: 25px;
+	font-family: "Inter", sans-serif;
+	font-weight: bold;
+	width: 139px;
+	height: 39px;
+	background-color: #FF0000;
+	margin-left: 100px;
+}
+
+.new-no-text {
+	user-select: none;
+	opacity: 0;
+	color: white;
+}

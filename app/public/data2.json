@@ -11,9 +11,11 @@
       "servings": 12,
       "user_id": 2,
       "category_id": 2,
-      "favorite": "no"
+      "favorite": "no",
+      "id": 1,
+      "views": 28
     },
-       {
+    {
       "title": "HAMBURGER",
       "description": "hamm hamm hamm gur gur gur",
       "image": "/pancakes2.png",
@@ -24,7 +26,9 @@
       "servings": 4,
       "user_id": 2,
       "category_id": 3,
-      "favorite": "no"
+      "favorite": "no",
+      "id": 2,
+      "views": 42
     },
     {
       "title": "hotdogg",
@@ -37,7 +41,9 @@
       "servings": 6,
       "user_id": 2,
       "category_id": 4,
-      "favorite": "no"
+      "favorite": "no",
+      "id": 3,
+      "views": 35
     },
     {
       "title": "pizza",
@@ -50,114 +56,129 @@
       "servings": 4,
       "user_id": 2,
       "category_id": 5,
-      "favorite": "no"
-    }, 
-      {
-        "title": "pans",
-        "description": "Delicious pans with syrup",
-        "image": "/pancakes2.png",
-        "average_score": "4.80",
-        "difficulty": "easy",
-        "preparation_time": "10 minutes",
-        "cooking_time": "20 minutes",
-        "servings": 8,
-        "user_id": 1,
-        "category_id": 6,
-        "favorite": "no"
-
-      },
-      {
-        "title": "Cheeseburger",
-        "description": "Juicy cheeseburger with fries",
-        "image": "/pancakes2.png",
-        "average_score": "4.65",
-        "difficulty": "intermediate",
-        "preparation_time": "15 minutes",
-        "cooking_time": "25 minutes",
-        "servings": 4,
-        "user_id": 2,
-        "category_id": 7,
-        "favorite": "no"
-      },
-      {
-        "title": "cold dog",
-        "description": "Classic cold dog with mustard and ketchup",
-        "image": "/pancakes2.png",
-        "average_score": "4.20",
-        "difficulty": "easy",
-        "preparation_time": "8 minutes",
-        "cooking_time": "12 minutes",
-        "servings": 6,
-        "user_id": 3,
-        "category_id": 8,
-        "favorite": "no"
-      },
-      {
-        "title": "Spaghetti Bolognese",
-        "description": "Homemade spaghetti with rich tomato sauce",
-        "image": "/pancakes2.png",
-        "average_score": "4.50",
-        "difficulty": "medium",
-        "preparation_time": "20 minutes",
-        "cooking_time": "35 minutes",
-        "servings": 4,
-        "user_id": 4,
-        "category_id": 9,
-        "favorite": "no"
-      }, 
-      {
-        "title": "pans",
-        "description": "Delicious pans with syrup",
-        "image": "/pancakes2.png",
-        "average_score": "4.80",
-        "difficulty": "easy",
-        "preparation_time": "10 minutes",
-        "cooking_time": "20 minutes",
-        "servings": 8,
-        "user_id": 1,
-        "category_id": 10,
-        "favorite": "no"
-      },
-      {
-        "title": "Cheeseburger",
-        "description": "Juicy cheeseburger with fries",
-        "image": "/pancakes2.png",
-        "average_score": "4.65",
-        "difficulty": "intermediate",
-        "preparation_time": "15 minutes",
-        "cooking_time": "25 minutes",
-        "servings": 4,
-        "user_id": 2,
-        "category_id": 11,
-        "favorite": "no"
-      },
-      {
-        "title": "cold dog",
-        "description": "Classic cold dog with mustard and ketchup",
-        "image": "/pancakes2.png",
-        "average_score": "4.20",
-        "difficulty": "easy",
-        "preparation_time": "8 minutes",
-        "cooking_time": "12 minutes",
-        "servings": 6,
-        "user_id": 3,
-        "category_id": 12,
-        "favorite": "no"
-      },
-      {
-        "title": "Spaghetti Bolognese",
-        "description": "Homemade spaghetti with rich tomato sauce",
-        "image": "/pancakes2.png",
-        "average_score": "4.50",
-        "difficulty": "medium",
-        "preparation_time": "20 minutes",
-        "cooking_time": "35 minutes",
-        "servings": 4,
-        "user_id": 4,
-        "category_id": 13,
-        "favorite": "no"
-      }
-    
-    
+      "favorite": "no",
+      "id": 4,
+      "views": 51
+    },
+    {
+      "title": "pans",
+      "description": "Delicious pans with syrup",
+      "image": "/pancakes2.png",
+      "average_score": "4.80",
+      "difficulty": "easy",
+      "preparation_time": "10 minutes",
+      "cooking_time": "20 minutes",
+      "servings": 8,
+      "user_id": 1,
+      "category_id": 6,
+      "favorite": "no",
+      "id": 5,
+      "views": 63
+    },
+    {
+      "title": "Cheeseburger",
+      "description": "Juicy cheeseburger with fries",
+      "image": "/pancakes2.png",
+      "average_score": "4.65",
+      "difficulty": "intermediate",
+      "preparation_time": "15 minutes",
+      "cooking_time": "25 minutes",
+      "servings": 4,
+      "user_id": 2,
+      "category_id": 7,
+      "favorite": "no",
+      "id": 6,
+      "views": 47
+    },
+    {
+      "title": "cold dog",
+      "description": "Classic cold dog with mustard and ketchup",
+      "image": "/pancakes2.png",
+      "average_score": "4.20",
+      "difficulty": "easy",
+      "preparation_time": "8 minutes",
+      "cooking_time": "12 minutes",
+      "servings": 6,
+      "user_id": 3,
+      "category_id": 8,
+      "favorite": "no",
+      "id": 7,
+      "views": 19
+    },
+    {
+      "title": "Spaghetti Bolognese",
+      "description": "Homemade spaghetti with rich tomato sauce",
+      "image": "/pancakes2.png",
+      "average_score": "4.50",
+      "difficulty": "medium",
+      "preparation_time": "20 minutes",
+      "cooking_time": "35 minutes",
+      "servings": 4,
+      "user_id": 4,
+      "category_id": 9,
+      "favorite": "no",
+      "id": 8,
+      "views": 55
+    },
+    {
+      "title": "pans",
+      "description": "Delicious pans with syrup",
+      "image": "/pancakes2.png",
+      "average_score": "4.80",
+      "difficulty": "easy",
+      "preparation_time": "10 minutes",
+      "cooking_time": "20 minutes",
+      "servings": 8,
+      "user_id": 1,
+      "category_id": 10,
+      "favorite": "no",
+      "id": 9,
+      "views": 72
+    },
+    {
+      "title": "Cheeseburger",
+      "description": "Juicy cheeseburger with fries",
+      "image": "/pancakes2.png",
+      "average_score": "4.65",
+      "difficulty": "intermediate",
+      "preparation_time": "15 minutes",
+      "cooking_time": "25 minutes",
+      "servings": 4,
+      "user_id": 2,
+      "category_id": 11,
+      "favorite": "no",
+      "id": 10,
+      "views": 60
+    },
+    {
+      "title": "cold dog",
+      "description": "Classic cold dog with mustard and ketchup",
+      "image": "/pancakes2.png",
+      "average_score": "4.20",
+      "difficulty": "easy",
+      "preparation_time": "8 minutes",
+      "cooking_time": "12 minutes",
+      "servings": 6,
+      "user_id": 3,
+      "category_id": 12,
+      "favorite": "no",
+      "id": 11,
+      "views": 31
+    },
+    {
+      "title": "Spaghetti Bolognese",
+      "description": "Homemade spaghetti with rich tomato sauce",
+      "image": "/pancakes2.png",
+      "average_score": "4.50",
+      "difficulty": "medium",
+      "preparation_time": "20 minutes",
+      "cooking_time": "35 minutes",
+      "servings": 4,
+      "user_id": 4,
+      "category_id": 13,
+      "favorite": "no",
+      "id": 12,
+      "views": 48
+    }
   ]
 }

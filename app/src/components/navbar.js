@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomLink from './CustomLink';
 import './pages/footer.css';
-import { faArrowUpFromBracket, faHeart, faScrewdriverWrench, faUpload } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpFromBracket, faHeart, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ export default function Navbar() {
         credentials: 'include',
       });
 
-      navigate("/login")
+      navigate("/Login")
       
 
     } catch (error) {
@@ -51,12 +51,15 @@ export default function Navbar() {
                                    <CustomLink to="/Recipes">Recipes</CustomLink>
                                    <CustomLink to="/Contact">Contact</CustomLink>
                                 
+                                   
                                   <form onSubmit={logout} method="POST">
+                       
                                         <button type="submit" className="custom-button mb-10">
                                              <p>logout</p>
                                              </button>
-                                             
+                               
                                         </form>
+                                       
                                    
                                    <CustomLink to="/Login">
 

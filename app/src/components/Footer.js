@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col justify-center items-center bg-lightblue py-4">
+    <footer className="flex flex-col justify-center items-center bg-lightblue">
       <div className="Top-Footer">
         <div className="flex justify-center gap-4">
           <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">

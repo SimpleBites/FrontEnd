@@ -1,0 +1,211 @@
+.Container-Nav-Admin {
+     background-color: #7FC7D9;
+     width: 200px;
+     color: #365486;
+     font-family: "Inter", sans-serif;
+     height: 103vh;
+}
+
+
+
+.Title-Nav-Admin {
+     color: #365486;
+     font-size: 22px;
+     font-weight: bold;
+     margin-top: -15px;
+     margin-bottom: 100px;
+     font-family: "Inter", sans-serif;
+     align-items: left;
+}
+
+.Content-Nav-Admin {
+     font-size: 22px;
+     font-family: "Inter", sans-serif;
+     font-weight: bold;
+}
+
+.admin-nav-icons {
+     height: 25px;
+     width: 30px;
+     margin-bottom: 12.5px;
+     margin-right: 5px;
+}
+
+.Content-Nav-Admin2 {
+     width: 100px;
+     background: #7FC7D9;
+     border: none;
+     outline: none;
+}
+
+.Content-Nav-Admin2::placeholder {
+     color: #365486;
+     opacity: 1;
+     font-weight: bold;
+     font-size: 22px;
+}
+
+.Users-panel-css {
+     font-size: 40px;
+     color: #365486;
+}
+
+.top-content-container {
+     background-color: #365486;
+     width: 750px;
+     margin-left: 100px;
+
+}
+
+.table-container {
+     padding-left: 16px;
+     padding-right: 16px;
+}
+
+.table thead tr {
+     background-color: #365486;
+     color: white;
+}
+
+.table th {
+     padding: 12px;
+}
+
+.table tbody tr:nth-child(2n) {
+     background-color: #7FC7D9;
+     height: 75px;
+     color: white;
+     font-size: 22px;
+     font-family: "Inter", sans-serif;
+}
+.table tbody tr:nth-child(odd) {
+     background-color: #69a5c0;
+     height: 75px;
+     color: white;
+     font-size: 22px;
+     font-family: "Inter", sans-serif;
+}
+
+.table {
+     min-width: 100%;
+}
+
+.table td {
+     padding-left: 16px;
+     padding-right: 16px;
+}
+
+.table td button {
+     margin-top: auto;
+     margin-bottom: auto;
+}
+
+
+.search-user-thingy::placeholder {
+     color: white;
+     opacity: 1;
+     font-size: 22px;
+}
+
+.search-user-thingy {
+     background-color: #365486;
+     color: white;
+     padding: 20px;
+     border: none;
+     outline: none;
+}
+
+.table-content {
+     color: white;
+     font-size: 22px;
+     font-family: "Inter", sans-serif;
+}
+
+.edit-btn {
+     background-color: #365486;
+     color: white;
+     font-size: 22px;
+     width: 120px;
+     height: 35px;
+}
+
+.delete-btn {
+     color: white;
+     font-size: 22px;
+     width: 120px;
+     height: 35px;
+     background-color: red;
+     margin-left: 20px;
+}
+
+.next-btn:nth-child(odd) {
+     color: white;
+     background-color: #365486;
+     width: 38px;
+     height: 38px;
+     font-size: 25px;
+     font-family: "Inter", sans-serif;
+
+}
+
+.next-btn:nth-child(2n) {
+     color: white;
+     background-color: #36548685;
+     width: 38px;
+     height: 38px;
+     margin-top: 20px;
+     font-size: 25px;
+     font-family: "Inter", sans-serif;
+}
+
+
+
+   
+  .next-btn.selected {
+     border: 2px solid #7FC7D9; /* Add border for the selected button */
+   }
+   
+   
+.edit-btn2 {
+     background-color: #365486;
+     color: white;
+     font-size: 22px;
+     width: 120px;
+     height: 35px;
+     margin-top: 3px!important;
+     margin-right: -10px;
+     margin-left: 2px;
+}
+
+.btn-content-arecipes {
+     font-size: 22px;
+     color: white;
+     font-family: "Inter", sans-serif;
+}
+ 
+.plus-styling {
+     font-size: 26px;
+}
+
+.delete-btn2 {
+     color: white;
+     font-size: 22px;
+     width: 250px;
+     height: 41px;
+     background-color: red;
+}
+
+.reject-content {
+     font-family: "Inter", sans-serif;
+     font-weight: bold;
+     font-size: 20px;
+}
+.status-btn {
+     color: white;
+     font-size: 22px;
+     width: 140px;
+     height: 35px;
+     background-color: rgb(30, 209, 30);
+     margin-top: 3px;
+}
+
