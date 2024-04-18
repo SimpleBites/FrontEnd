@@ -12,7 +12,7 @@ export default function Recipe() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/recipes', {
+        const response = await fetch(`http://localhost:5000/api/recipes/${id}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -20,8 +20,8 @@ export default function Recipe() {
         });
   
         const data = await response.json();
-        console.log(data.data)
-        const filteredRecipe = data.data.find(recipe => recipe.id === id);
+        console.log(data.instructions)
+        //const filteredRecipe = data.data.find(recipe => recipe.id === id);
         
       } catch (error) {
         console.error(error);

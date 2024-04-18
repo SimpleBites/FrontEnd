@@ -30,7 +30,7 @@ export default function Login() {
       setPasswordError('');
       if(errors === undefined){
         alert("login succesful! redirecting to homepage")
-        window.location.href = "/home";
+        window.location.href = "/Home";
        
       } else{
         if(errors) {
