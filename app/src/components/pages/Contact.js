@@ -2,6 +2,28 @@ import React, { useState, useEffect } from 'react';
 import CustomLink from '../CustomLink';
 
 export default function Contact() {
+
+  const [subject,setSubject] = useState("")
+  const [email,setEmail] = useState("")
+  const [message ,setMessage] = useState("")
+  const sendEmail = async (event) => {
+    try {
+      event.preventDefault();
+      const response = await fetch('http://localhost:4000/sendMail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        
+        body: JSON.stringify({email, subject, message})
+      });
+
+    
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   const [recipes, setRecipes] = useState([]);
   const [formData, setFormData] = useState({
     name: '',
@@ -28,44 +50,40 @@ export default function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); 
-  };
 
   return (
     <div className="flex flex-col items-center mt-20 min-h-screen">
       <h1 className="title-contact-page mb-8">Lorem ipsum dolor sit <br></br>amet</h1>
-      <form onSubmit={handleSubmit} className="flex">
+      <form onSubmit={sendEmail} method="POST" className="flex">
         <p className="Lorem-text-styling-contact mr-20">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus. Pharetra massa massa ultricies mi quis hendrerit. Vel eros donec ac odio tempor orci dapibus ultrices in. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus. Pharetra massa massa ultricies mi quis hendrerit. Vel eros donec ac odio tempor orci dapibus ultrices in.
         </p>
         <div className="mr-4 box-submit-contact">
-          <p className="mt-3 text-align-contact">Your name</p>
-          <input 
-            className="text-area-contact" 
-            type='text' 
-            name="name" 
-            value={formData.name} 
-            onChange={handleChange} 
-            required
-          />
           <p className='text-align-contact'>Your email</p>
           <input 
             className="text-area-contact" 
             type='email' 
             name="email" 
-            value={formData.email} 
-            onChange={handleChange} 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <p className="mt-3 text-align-contact">Your subject</p>
+          <input 
+            className="text-area-contact" 
+            type='text' 
+            name="subject" 
+            value={subject} 
+            onChange={(e) => setSubject(e.target.value)} 
             required
           />
           <p className='text-align-contact'>Your message</p>
           <textarea 
             name="message" 
-            value={formData.message} 
+            value={message} 
             className="text-area-contact" 
             style={{ resize: 'none', overflow: 'hidden', height: "108px"}} 
-            onChange={handleChange} 
+            onChange={(e) => setMessage(e.target.value)}
             required
           />
           <button type="submit" className="sub-button2">S U B M I T</button>

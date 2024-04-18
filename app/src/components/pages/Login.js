@@ -30,12 +30,11 @@ export default function Login() {
       setPasswordError('');
       if(errors === undefined){
         alert("login succesful! redirecting to homepage")
-        navigate("/home")
+        window.location.href = "/home";
+       
       } else{
         if(errors) {
           errors.forEach(error => {
-               console.log(error.path)
-            
             if(error.path === 'email') {
               setEmailError(error.msg);
             } else if(error.path === 'password') {
@@ -107,7 +106,7 @@ export default function Login() {
                 // placeholder="Password"
                 required
                 className="custom-input"
-              />
+              />{<p className="text-red-500 flex justify-start pl-10 text-md italic">{passwordError}</p>}
             </div>
             <div className="check-box">
               <label className="flex items-left mb-4 check-box"> 

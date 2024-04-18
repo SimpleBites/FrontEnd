@@ -6,18 +6,27 @@ import './footer.css';
 
 export default function Recipe() {
   const [recipe, setRecipe] = useState(null);
-  const id = 5;
+  const id = 6;
+  console.log(window.location.pathname);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data3.json');
+        const response = await fetch('http://localhost:5000/api/recipes', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+  
         const data = await response.json();
-        const filteredRecipe = data.recipes.find(recipe => recipe.id === id);
-        setRecipe(filteredRecipe);
+        console.log(data.data)
+        const filteredRecipe = data.data.find(recipe => recipe.id === id);
+        
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error(error);
       }
+      
     };
 
     fetchData();
@@ -31,9 +40,9 @@ export default function Recipe() {
             <div className="flex flex-wrap items-start justify-center">
               <img src="pancakes.png" alt='hi' className="image-container" style={{ width: '425px', height: 'auto', maxWidth: '325px', maxHeight: '325px', marginRight: '20px', marginTop: '20px' }} />
               <div className="flex flex-col justify-left">
-                <h1 className="text-black title title-recipe-page">{recipe.title}</h1>
+                <h1 className="text-black title title-recipe-page"></h1>
                 <div className="recipe-description-box">
-                  <p className="description-recipe-page">{recipe.description}</p>
+                  <p className="description-recipe-page"></p>
                 </div>
               </div>
             </div>
