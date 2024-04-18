@@ -1,0 +1,62 @@
+.dashboard-box {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 2.4rem;
+    margin-right: 3rem;
+    background-color: #365486;
+    text-decoration: none;
+    width: 380px; /* Set a wider fixed width */
+    
+  }
+  
+  .dashboard-box:hover {
+    background-color: #2a4365;
+  }
+  
+  .icon {
+    color: white;
+    margin-right: 3rem;
+    margin-left: -1rem; /* Adjust the margin as needed */
+    font-size: 4rem; /* Adjust the size as needed */
+  }
+  
+  .text {
+    color: white;
+    text-align: left;
+  }
+  
+  .text p:last-child {
+    text-align: left;
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 768px) {
+    .dashboard-box {
+      width: 45%; /* Adjust as needed for smaller screens */
+      margin-right: 1rem; /* Adjust as needed */
+      padding: 1.6rem; /* Adjust as needed */
+    }
+  
+    .icon {
+      margin-right: 1rem; /* Adjust as needed */
+      font-size: 3rem; /* Adjust as needed */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .dashboard-box {
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0; /* No margin on smaller screens */
+      padding: 1rem; /* Adjust as needed */
+    }
+  
+    .icon {
+      margin-right: 0.5rem; /* Adjust as needed */
+      margin-left: 0; /* No left margin on smaller screens */
+      font-size: 2.5rem; /* Adjust as needed */
+    }
+  }
+  

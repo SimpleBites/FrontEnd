@@ -119,6 +119,9 @@ export default function Recipes() {
               <Recipe key={index} recipe={recipe} onToggleFavorite={handleToggleFavorite} />
             ))}
           </div>
+          <div className="mt-2 block mb-2">
+            <h1 className='new-no-text'>hi</h1>
+          </div>
         </div>
       </div>
     </div>

@@ -80,13 +80,13 @@ export default function Profile() {
         <CustomLink to="/favorites" className="box">
           <div className="box-content2">
             <FontAwesomeIcon icon={faHeart} className='heart' />
-            <span className="text">Saved Recipes</span>
+            <span className="text2">Saved Recipes</span>
           </div>
         </CustomLink>
         <CustomLink to="/submit" className="box">
           <div className="box-content2">
             <FontAwesomeIcon icon={faDownload} className='download' />
-            <span className="text">Submit Your Own Unique Recipes</span>
+            <span className="text2">Submit Your Own Unique Recipes</span>
           </div>
         </CustomLink>
       </div>

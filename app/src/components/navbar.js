@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CustomLink from './CustomLink';
 import './pages/footer.css';
-import { faArrowUpFromBracket, faHeart, faScrewdriverWrench, faUpload } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpFromBracket, faHeart, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
