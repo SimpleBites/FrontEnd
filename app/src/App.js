@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Recipes from "./components/pages/Recipes";
-import Profile from "./components/pages/Profile";
+import Profile from "./components/pages/profile";
 import Contact from "./components/pages/Contact";
 import Footer from './components/Footer';
 import Navbar from "./components/navbar";
@@ -24,6 +24,7 @@ import Adduser from "./components/pages/admin/adduser";
 import Rejected from "./components/pages/admin/rejected";
 import Aapprove from "./components/pages/admin/aapprove";
 import Asubmitted from "./components/pages/admin/Asubmitted";
+import Aupload from "./components/pages/admin/aupload";
 
 function App() {
   const location = useLocation();
@@ -72,6 +73,7 @@ function App() {
         <Route path="/admin/rejected" element={<Rejected />} /> 
         <Route path="/admin/aapprove" element={<Aapprove />} /> 
         <Route path="/admin/asubmitted" element={<Asubmitted />} /> 
+        <Route path="/admin/aupload" element={<Aupload />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>

@@ -19,7 +19,7 @@ export default function Navbar() {
         credentials: 'include',
       });
 
-      navigate("/login")
+      navigate("/Login")
       
 
     } catch (error) {

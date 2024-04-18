@@ -6,7 +6,7 @@ import { faClock } from '@fortawesome/free-regular-svg-icons';
 
 import '../footer.css';
 
-export default function Submit() {
+export default function Aupload() {
   const [inputValues, setInputValues] = useState(['']);
   const [extraValue, setHasValue] = useState(false); 
   const [selectedImage, setSelectedImage] = useState(null);
