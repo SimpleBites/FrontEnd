@@ -219,7 +219,6 @@ export default function Submit() {
                     onChange={(e) => setPrepTime(e.target.value)}
                   />
                 </div>
-                <p className="absolute mt-28 ml-32">(in minutes)</p>
                 <div className="w-1/3 px-2">
                   <FontAwesomeIcon icon={faClock} className="sizing" />
                   <label className="block mb-2">Cook Time</label>
