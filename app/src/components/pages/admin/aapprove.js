@@ -44,7 +44,7 @@ export default function Aapprove() {
             setPrepTime(recipe.preparation_time || '');
             setCookTime(recipe.cooking_time || '');
             setServings(recipe.servings || '');
-            setInputValues(recipe.instructions || ['']);
+            setInputValues(Array.isArray(recipe.instructions) ? recipe.instructions : (recipe.instructions ? recipe.instructions.split(' ') : ['']));
             setIngreValues(recipe.ingredients || ['']);
             setToolValues(recipe.tools || ['']);
             setRecipeImg(recipe.image || '');
@@ -59,17 +59,17 @@ export default function Aapprove() {
   }, [id]);
 
   const handleChange = (index, value) => {
-    const newInputValues = [...inputValues];
+    let newInputValues = Array.isArray(inputValues) ? [...inputValues] : inputValues.split(' ');
     newInputValues[index] = value;
-
+  
     if (index === newInputValues.length - 1) {
       newInputValues.push('');
     } else if (index === newInputValues.length - 2 && newInputValues[index] === '') {
       newInputValues.pop();
     }
-
+  
     setInputValues(newInputValues);
-
+  
     const hasValueNow = newInputValues.some(val => typeof val === 'string' && val.trim() !== '');
     setHasValue(hasValueNow);
   };
@@ -166,6 +166,8 @@ export default function Aapprove() {
       handleDelete(deleteIndex);
     }
   };
+
+  console.log('inputValues:', inputValues, 'Type of inputValues:', typeof inputValues);
 
   return (
     <div className="flex">
