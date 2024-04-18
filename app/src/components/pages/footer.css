@@ -551,12 +551,6 @@
 	margin-right: 440px;
 }
 
-.Confirm {
-	margin-left: 400px;
-	margin-top: -20px;
-	margin-bottom: 25px;
-}
-
 .selected8 {
 	display: inline-block;
 	position: relative;
@@ -727,7 +721,7 @@ li {
 .Confirm {
 	margin-left: 400px;
 	margin-top: -20px;
-	margin-bottom: 25px;
+	margin-bottom: 3px;
 }
 
 /* .selected {

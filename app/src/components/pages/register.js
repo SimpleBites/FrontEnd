@@ -150,11 +150,12 @@ export default function Register() {
 
                                    </div>
                                    {<p className="text-red-500 flex justify-start pl-10 text-xs italic">{password1Error}</p>}
-                                   {<p className="text-red-500 text-md italic">{password2Error}</p>}
+            
                                    <div className="flex flex-col">
                                         <span className='Enter'>enter password</span>
                                         <span className='Confirm'>confirm password</span>
                                    </div>
+                                   {<p className="text-red-500 text-md italic mb-4">{password2Error}</p>}
                               </div>
                               <div className="check-box">
                                    <label className="flex items-left mb-4 check-box">
