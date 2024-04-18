@@ -6,7 +6,7 @@ import './footer.css';
 
 export default function Recipe() {
   const [recipe, setRecipe] = useState(null);
-  const id = 6;
+  const id = 3;
   console.log(window.location.pathname);
 
   useEffect(() => {
