@@ -28,7 +28,7 @@ export default function About() {
         <img src="/pancakes.jpg" alt="Pancakes" className="object-cover about-image" style={{ width: '400px', height: '300px', marginRight: '30px', marginTop: '-130px', marginBottom: '40px' }} />
       </div>
       <div className="flex justify-center items-center mt-4">
-        <CustomLink to="/contact" className="contact-button" style={{ backgroundColor: '#365486', marginRight: '1050px', padding: '10px 20px', color: '#fff', border: 'none', borderRadius: '5px', fontSize: '16px', cursor: 'pointer' }}>Contact Us</CustomLink>
+        <CustomLink to="/Contact" className="contact-button" style={{ backgroundColor: '#365486', marginRight: '1050px', padding: '10px 20px', color: '#fff', border: 'none', borderRadius: '5px', fontSize: '16px', cursor: 'pointer' }}>Contact Us</CustomLink>
       </div>
       <div>
         <p className="text-recipe-about" style={{ fontSize: '19px', color: '#365486', marginBottom: '22px', marginTop: '30px' }}>Check Out These Incredible Recipes!</p>
