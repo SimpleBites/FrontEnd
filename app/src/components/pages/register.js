@@ -40,7 +40,7 @@ export default function Register() {
                setPassword2Error('');
                if(errors === undefined){
                     alert("register succesful! redirecting to homepage")
-                    window.location.href = "/home";
+                    window.location.href = "/Home";
                   } else{
                     errors.forEach(error => {
                          if (error.path === 'username') {

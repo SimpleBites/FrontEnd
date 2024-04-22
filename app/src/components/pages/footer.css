@@ -1655,3 +1655,16 @@ li {
 	opacity: 0;
 	color: white;
 }
+
+.extra-styling-comments {
+	background-color: rgb(247, 244, 244);
+}
+
+.edited-class {
+	opacity: 0.8;
+}
+
+.Reply-btn-color {
+	color: gray;
+	opacity: 0.8;
+}

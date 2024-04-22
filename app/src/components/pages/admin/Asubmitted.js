@@ -52,7 +52,6 @@ export default function Asubmitted() {
   var views = 56;
 
   const handleView = (recipeId) => {
-    // Handle view button click
     console.log('Viewing recipe with ID:', recipeId);
   };
 

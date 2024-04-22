@@ -17,7 +17,6 @@ import Arecipes from "./components/pages/admin/arecipes"
 
 import "../src/AppTw.css";
 import AdminNav from "./components/adminNav";
-import Comments from "./components/pages/admin/comments";
 import Panel from "./components/pages/admin/panel";
 import Dashboard from "./components/pages/admin/dashboard";
 import Adduser from "./components/pages/admin/adduser";
@@ -25,6 +24,7 @@ import Rejected from "./components/pages/admin/rejected";
 import Aapprove from "./components/pages/admin/aapprove";
 import Asubmitted from "./components/pages/admin/Asubmitted";
 import Aupload from "./components/pages/admin/aupload";
+import Comments from "./components/pages/comments";
 
 function App() {
   const location = useLocation();
@@ -42,9 +42,9 @@ function App() {
     "/submit",
     "/Submitted",
     "/Recipe",
-    "/Admin/Comments",
     "/Admin/Dashboard",
     "/Admin/Adduser",
+    "/comments"
   ];
 
   const showNavbarAndFooter = showNavbarAndFooterRoutes.includes(location.pathname);
@@ -74,6 +74,7 @@ function App() {
         <Route path="/admin/aapprove" element={<Aapprove />} /> 
         <Route path="/admin/asubmitted" element={<Asubmitted />} /> 
         <Route path="/admin/aupload" element={<Aupload />} /> 
+        <Route path="/Comments" element={<Comments />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>

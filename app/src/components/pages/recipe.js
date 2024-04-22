@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock as FasClock, faUsers, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faClock as FasClock, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import './footer.css';
 
@@ -22,12 +22,10 @@ export default function Recipe() {
         console.log('Fetched data:', data);
 
         if (data) {
-          const filteredRecipe = data.find(recipe => recipe.id === id);
-          if (filteredRecipe) {
-            setRecipe(filteredRecipe);
-          } else {
-            console.log('Recipe with id', id, 'not found');
-          }
+          data[0].instructions = data[0].instructions ? data[0].instructions.split(' ') : [];
+          data[0].ingredients = data[0].ingredients ? data[0].ingredients.split(' ') : [];
+          data[0].tools = data[0].tools ? data[0].tools.split(' ') : [];
+          setRecipe(data[0]); 
         } else {
           console.log('No recipe data found in the response');
         }
@@ -84,7 +82,7 @@ export default function Recipe() {
             </div>
           </div>
           <div className="instructions">
-            <div className="flex flex-wrap">
+           <div className="flex flex-wrap">
               <div className="lg:w-1/2 lg:col-span-1 order-2 lg:order-1">
                 <div className="mb-4">
                   <h1 className='Instr mt-4'>Instructions</h1>
@@ -120,7 +118,7 @@ export default function Recipe() {
                   <p className='text-tools'>{tool}</p>
                 </div>
               ))}
-            </div>
+            </div> 
             <span className="whitespace">white space</span>
           </div>
         </div>
