@@ -31,42 +31,42 @@ function App() {
   console.log("Current location:", location.pathname); 
 
   const showNavbarAndFooterRoutes = [
-    "/Home",
-    "/About",
-    "/Recipes",
-    "/Contact",
-    "/Login",
-    "/Register",
+    "/",
+    "/about",
+    "/recipes",
+    "/contact",
+    "/login",
+    "/register",
     "/profile",
     "/favorites",
     "/submit",
-    "/Submitted",
-    "/Recipe",
-    "/Admin/Dashboard",
-    "/Admin/Adduser",
+    "/submitted",
+    "/recipe",
+    "/admin/dashboard",
+    "/admin/adduser",
     "/comments"
   ];
 
-  const showNavbarAndFooter = showNavbarAndFooterRoutes.includes(location.pathname);
+  const showNavbarAndFooter = showNavbarAndFooterRoutes.includes(location.pathname.toLowerCase());
 
   return (
     <div className="App">
       {showNavbarAndFooter && <Navbar />}
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Recipes" element={<Recipes />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/Profile" element={<Profile />} />
-        <Route path="/Favorites" element={<Favorites />} />
-        <Route path="/Submit" element={<Submit />} />
-        <Route path="/Submitted" element={<Submitted />} />
-        <Route path="/Recipe" element={<Recipe />} />
-        <Route path="/Admin/*" element={<AdminWithLayout />} /> 
-        <Route path="/Admin/Comments" element={<Comments />} /> 
-        <Route path="/admin/Panel" element={<Panel />} /> 
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/recipes" element={<Recipes />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/submit" element={<Submit />} />
+        <Route path="/submitted" element={<Submitted />} />
+        <Route path="/recipe" element={<Recipe />} />
+        <Route path="/admin/*" element={<AdminWithLayout />} /> 
+        <Route path="/admin/comments" element={<Comments />} /> 
+        <Route path="/admin/panel" element={<Panel />} /> 
         <Route path="/admin/arecipes" element={<Arecipes />} /> 
         <Route path="/admin/dashboard" element={<Dashboard />} /> 
         <Route path="/admin/adduser" element={<Adduser />} /> 
@@ -74,7 +74,7 @@ function App() {
         <Route path="/admin/aapprove" element={<Aapprove />} /> 
         <Route path="/admin/asubmitted" element={<Asubmitted />} /> 
         <Route path="/admin/aupload" element={<Aupload />} /> 
-        <Route path="/Comments" element={<Comments />} /> 
+        <Route path="/comments" element={<Comments />} /> 
       </Routes>
       {showNavbarAndFooter && <Footer />}
     </div>

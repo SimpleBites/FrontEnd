@@ -50,7 +50,7 @@ export default function Navbar() {
           <nav className="nav">
                <div className="background">
                     <div className="nav-content">
-                         <CustomLink to="/Home" >
+                         <CustomLink to="/" >
                               <img src='/logo.png' className="logo" alt='hi' style={{ width: '150px', height: '150px', marginRight: '5px' }} />
                          </CustomLink>
                          <div className="slogan"><h2 className="Simple"> Simple Bites</h2>
@@ -65,7 +65,7 @@ export default function Navbar() {
 
                          <ul>
                               <div className="nav-btm-content">
-                                   <CustomLink to="/Home" className="Home">Home</CustomLink>
+                                   <CustomLink to="/" className="Home">Home</CustomLink>
                                    <CustomLink to="/About">About</CustomLink>
                                    <CustomLink to="/Recipes">Recipes</CustomLink>
                                    <CustomLink to="/Contact">Contact</CustomLink>
